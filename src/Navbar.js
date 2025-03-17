@@ -12,6 +12,9 @@ function Navbar() {
         <li>
           <Link to="/two-oz-cocktails">2oz Cocktails</Link>
         </li>
+        <li>
+          <Link to="/tall-drinks">Tall Drinks</Link>
+        </li>
       </ul>
     </div>
   );

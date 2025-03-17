@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import TwoOzCocktails from "./TwoOzCocktails";
 import Header from "./Header";
+import TallDrinks from "./TallDrinks";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/two-oz-cocktails" element={<TwoOzCocktails />} />
+            <Route path="/tall-drinks" element={<TallDrinks />} />
           </Routes>
         </BrowserRouter>
       </header>

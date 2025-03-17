@@ -126,8 +126,8 @@ function TwoOzCocktailsList() {
       {cocktails.map((cocktail, index) => (
         <li key={index}>
           <h3>{cocktail.name}</h3>
-          <h4>Alcohol 1: {cocktail.liquor1}</h4>
-          <h4>Alcohol 2: {cocktail.liquor2}</h4>
+          <h4>{cocktail.liquor1}</h4>
+          <h4>{cocktail.liquor2}</h4>
           <h4>{cocktail.filler}</h4>
           <p>{cocktail.glass}</p>
           <p>{cocktail.mixingMethod}</p>
