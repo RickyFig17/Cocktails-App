@@ -5,6 +5,7 @@ import Home from "./Home";
 import TwoOzCocktails from "./TwoOzCocktails";
 import Header from "./Header";
 import TallDrinks from "./TallDrinks";
+import Highballs from "./Highballs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/two-oz-cocktails" element={<TwoOzCocktails />} />
             <Route path="/tall-drinks" element={<TallDrinks />} />
+            <Route path="/highballs" element={<Highballs />} />
           </Routes>
         </BrowserRouter>
       </header>
