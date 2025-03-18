@@ -1,11 +1,30 @@
 import React from "react";
+import "./TwoOzCocktails.scss";
 
 function TwoOzCocktails() {
   return (
-    <>
+    <div className="two-oz-cocktails">
       <h2>2oz Cocktails</h2>
       <TwoOzCocktailsList />
-    </>
+    </div>
+  );
+}
+
+function CocktailCard({ cocktail }) {
+  return (
+    <div className="cocktail-card">
+      <h3>{cocktail.name}</h3>
+      <p>
+        <strong>{cocktail.liquor1}</strong>
+      </p>
+      <p>
+        <strong>{cocktail.liquor2}</strong>
+      </p>
+      <p>{cocktail.filler}</p>
+      <p>{cocktail.glass}</p>
+      <p>{cocktail.mixingMethod}</p>
+      <p>{cocktail.garnish}</p>
+    </div>
   );
 }
 
@@ -122,19 +141,11 @@ function TwoOzCocktailsList() {
   ];
 
   return (
-    <ul>
+    <div className="cocktail-list">
       {cocktails.map((cocktail, index) => (
-        <li key={index}>
-          <h3>{cocktail.name}</h3>
-          <h4>{cocktail.liquor1}</h4>
-          <h4>{cocktail.liquor2}</h4>
-          <h4>{cocktail.filler}</h4>
-          <p>{cocktail.glass}</p>
-          <p>{cocktail.mixingMethod}</p>
-          <p>{cocktail.garnish}</p>
-        </li>
+        <CocktailCard key={index} cocktail={cocktail} />
       ))}
-    </ul>
+    </div>
   );
 }
 
