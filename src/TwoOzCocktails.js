@@ -138,6 +138,24 @@ function TwoOzCocktailsList() {
       mixingMethod: "Build on Ice",
       garnish: "Lemon Peel",
     },
+    {
+      name: "MOdern Old Fashion",
+      liquor1: "2oz Whiskey",
+      liquor2: "",
+      filler: "1/2oz Simple Syrup, 2-3 dashes of Bitters",
+      glass: "Rocks Glass",
+      mixingMethod: "Build on Ice",
+      garnish: "Orange Zest, Cherry",
+    },
+    {
+      name: "Old Fashion",
+      liquor1: "2oz Whiskey",
+      liquor2: "",
+      filler: "1/2oz Simple Syrup, Orange Zest, 2-3 dashes of Bitters. Muddle Ingredients, add Ice",
+      glass: "Rocks Glass",
+      mixingMethod: "Build on Ice",
+      garnish: "Orange Peel, Cherry"
+    }
   ];
 
   return (
