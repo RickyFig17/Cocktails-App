@@ -6,6 +6,7 @@ import TwoOzCocktails from "./TwoOzCocktails";
 import Header from "./Header";
 import TallDrinks from "./TallDrinks";
 import Highballs from "./Highballs";
+import CreamDrinks from "./CreamDrinks";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/two-oz-cocktails" element={<TwoOzCocktails />} />
             <Route path="/tall-drinks" element={<TallDrinks />} />
             <Route path="/highballs" element={<Highballs />} />
+            <Route path="/cream-drinks" element={<CreamDrinks />} />
           </Routes>
         </BrowserRouter>
       </header>
