@@ -21,6 +21,9 @@ function Navbar() {
         <li>
           <Link to="/cream-drinks">Cream Drinks and After Dinner Drinks</Link>
         </li>
+        <li>
+          <Link to="/martinis">Martinis</Link>
+        </li>
       </ul>
     </div>
   );

@@ -7,6 +7,7 @@ import Header from "./Header";
 import TallDrinks from "./TallDrinks";
 import Highballs from "./Highballs";
 import CreamDrinks from "./CreamDrinks";
+import Martinis from "./Martinis";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/tall-drinks" element={<TallDrinks />} />
             <Route path="/highballs" element={<Highballs />} />
             <Route path="/cream-drinks" element={<CreamDrinks />} />
+            <Route path="/martinis" element={<Martinis />} />
           </Routes>
         </BrowserRouter>
       </header>
