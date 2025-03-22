@@ -24,6 +24,9 @@ function Navbar() {
         <li>
           <Link to="/martinis">Martinis</Link>
         </li>
+        <li>
+          <Link to="/sours">Sours And Margaritas</Link>
+        </li>
       </ul>
     </div>
   );
