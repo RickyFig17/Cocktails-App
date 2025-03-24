@@ -9,6 +9,7 @@ import Highballs from "./Highballs";
 import CreamDrinks from "./CreamDrinks";
 import Martinis from "./Martinis";
 import Sours from "./Sours";
+import Shooters from "./Shooters";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
             <Route path="/highballs" element={<Highballs />} />
             <Route path="/cream-drinks" element={<CreamDrinks />} />
             <Route path="/martinis" element={<Martinis />} />
-            <Route path="/sours" element={<Sours/>} />
+            <Route path="/sours" element={<Sours />} />
+            <Route path="/shooters" element={<Shooters />} />
           </Routes>
         </BrowserRouter>
       </header>
