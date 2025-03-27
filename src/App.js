@@ -10,6 +10,7 @@ import CreamDrinks from "./CreamDrinks";
 import Martinis from "./Martinis";
 import Sours from "./Sours";
 import Shooters from "./Shooters";
+import WineCocktails from "./WineCocktails";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/martinis" element={<Martinis />} />
             <Route path="/sours" element={<Sours />} />
             <Route path="/shooters" element={<Shooters />} />
+            <Route path="/wine-cocktails" element={<WineCocktails />} />
           </Routes>
         </BrowserRouter>
       </header>

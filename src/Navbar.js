@@ -30,6 +30,9 @@ function Navbar() {
         <li>
           <Link to="/shooters">Shooters</Link>
         </li>
+        <li>
+          <Link to="/wine-cocktails">Wine Cocktails</Link>
+        </li>
       </ul>
     </div>
   );
