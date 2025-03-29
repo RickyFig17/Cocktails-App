@@ -1,4 +1,5 @@
 import React from "react";
+import "./TallDrinks.scss";
 
 function TallDrinks() {
   return (
@@ -6,6 +7,36 @@ function TallDrinks() {
       <h3>Tall Drinks</h3>
       <TallDrinksList />
     </>
+  );
+}
+
+function CocktailCard({ cocktail }) {
+  return (
+    <div className="cocktail-card">
+      <h3>{cocktail.name}</h3>
+      <p>
+        <strong>{cocktail.alcohol1}</strong>
+      </p>
+      <p>
+        <strong>{cocktail.alcohol2}</strong>
+      </p>
+      <p>
+        <strong>{cocktail.alcohol3}</strong>
+      </p>
+      <p>
+        <strong>{cocktail.alcohol4}</strong>
+      </p>
+      <p>
+        <strong>{cocktail.alcohol5}</strong>
+      </p>
+      <p>{cocktail.filler1}</p>
+      <p>{cocktail.filler2}</p>
+      <p>{cocktail.filler3}</p>
+      <p>{cocktail.glass}</p>
+      <p>{cocktail.mixingMethod}</p>
+      <p>{cocktail.garnish}</p>
+      <p>{cocktail.description}</p>
+    </div>
   );
 }
 
@@ -132,20 +163,20 @@ function TallDrinksList() {
       garnish: "Pinneapple",
     },
     {
-        name: "Mai Tai",
-        alcohol1: "1/2oz Lt. Rum",
-        alcohol2: "1/2oz Triple sec",
-        alcohol3: "1/2oz Creme de Almond",
-        alcohol4: "",
-        alcohol5: "",
-        filler1: "1/2oz Grenadine",
-        filler2: "3oz Sweet & Sour",
-        filler3: "",
-        top: "",
-        glass: "Tall Glass",
-        mixingMethod: "Build & Shake",
-        garnish: "Flag",
-      },
+      name: "Mai Tai",
+      alcohol1: "1/2oz Lt. Rum",
+      alcohol2: "1/2oz Triple sec",
+      alcohol3: "1/2oz Creme de Almond",
+      alcohol4: "",
+      alcohol5: "",
+      filler1: "1/2oz Grenadine",
+      filler2: "3oz Sweet & Sour",
+      filler3: "",
+      top: "",
+      glass: "Tall Glass",
+      mixingMethod: "Build & Shake",
+      garnish: "Flag",
+    },
     {
       name: "Long Island Tea",
       alcohol1: "1/2oz Vodka",
@@ -272,25 +303,11 @@ function TallDrinksList() {
     },
   ];
   return (
-    <ul>
+    <div className="cocktail-list">
       {cocktails.map((cocktail, index) => (
-        <li key={index}>
-          <h3>{cocktail.name}</h3>
-          <h4>{cocktail.alcohol1}</h4>
-          <h4>{cocktail.alcohol2}</h4>
-          <h4>{cocktail.alcohol3}</h4>
-          <h4>{cocktail.alcohol4}</h4>
-          <h4>{cocktail.alcohol5}</h4>
-          <h4>{cocktail.filler1}</h4>
-          <h4>{cocktail.filler2}</h4>
-          <h4>{cocktail.filler3}</h4>
-          <p>{cocktail.glass}</p>
-          <p>{cocktail.mixingMethod}</p>
-          <p>{cocktail.garnish}</p>
-          <p>{cocktail.description}</p>
-        </li>
+        <CocktailCard key={index} cocktail={cocktail} />
       ))}
-    </ul>
+    </div>
   );
 }
 
