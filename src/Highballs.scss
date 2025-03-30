@@ -1,0 +1,49 @@
+.two-oz-cocktails {
+  text-align: center;
+  padding: 20px;
+  //   background: #f4f4f4;
+  min-height: 100vh;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.cocktail-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cocktail-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    color: #333;
+    margin: 0 0 10px;
+  }
+
+  p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  strong {
+    color: #000;
+  }
+}
