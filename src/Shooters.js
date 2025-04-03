@@ -9,6 +9,29 @@ function Shooters() {
   );
 }
 
+function CocktailCard({ cocktail }) {
+  return (
+    <div className="cocktail-card">
+      <h3>{cocktail.name}</h3>
+      <p>
+        <strong>{cocktail.alcohol1}</strong>
+      </p>
+      <p>
+        <strong>{cocktail.alcohol2}</strong>
+      </p>
+      <p>
+        <strong>{cocktail.alcohol3}</strong>
+      </p>
+      <p>{cocktail.filler1}</p>
+      <p>{cocktail.filler2}</p>
+      <p>{cocktail.filler3}</p>
+      <p>{cocktail.glass}</p>
+      <p>{cocktail.mixingMethod}</p>
+      <p>{cocktail.garnish}</p>
+    </div>
+  );
+}
+
 function ShootersList() {
   const cocktails = [
     {
@@ -184,24 +207,11 @@ function ShootersList() {
   ];
 
   return (
-    <ul>
+    <div className="cocktail-list">
       {cocktails.map((cocktail, index) => (
-        <li key={index}>
-          <h3>{cocktail.name}</h3>
-          <h4>{cocktail.alcohol1}</h4>
-          <h4>{cocktail.alcohol2}</h4>
-          <h4>{cocktail.alcohol3}</h4>
-          <h4>{cocktail.alcohol4}</h4>
-          <h4>{cocktail.alcohol5}</h4>
-          <h4>{cocktail.filler1}</h4>
-          <h4>{cocktail.filler2}</h4>
-          <h4>{cocktail.filler3}</h4>
-          <p>{cocktail.glass}</p>
-          <p>{cocktail.mixingMethod}</p>
-          <p>{cocktail.garnish}</p>
-        </li>
+        <CocktailCard key={index} cocktail={cocktail} />
       ))}
-    </ul>
+    </div>
   );
 }
 
