@@ -9,6 +9,25 @@ function Sours() {
   );
 }
 
+function CocktailCard({ cocktail }) {
+  return (
+    <div className="cocktail-card">
+      <h3>{cocktail.name}</h3>
+      <p>
+        <strong>{cocktail.alcohol1}</strong>
+      </p>
+      <p>
+        <strong>{cocktail.alcohol2}</strong>
+      </p>
+      <p>{cocktail.filler1}</p>
+      <p>{cocktail.filler2}</p>
+      <p>{cocktail.glass}</p>
+      <p>{cocktail.mixingMethod}</p>
+      <p>{cocktail.garnish}</p>
+    </div>
+  );
+}
+
 function SoursList() {
   const cocktails = [
     {
@@ -103,21 +122,13 @@ function SoursList() {
       garnish: "Sugar Rim & Flagg",
     },
   ];
+
   return (
-    <ul>
+    <div className="cocktail-list">
       {cocktails.map((cocktail, index) => (
-        <li key={index}>
-          <h3>{cocktail.name}</h3>
-          <h4>{cocktail.alcohol1}</h4>
-          <h4>{cocktail.alcohol2}</h4>
-          <h4>{cocktail.filler1}</h4>
-          <h4>{cocktail.filler2}</h4>
-          <p>{cocktail.glass}</p>
-          <p>{cocktail.mixingMethod}</p>
-          <p>{cocktail.garnish}</p>
-        </li>
+        <CocktailCard key={index} cocktail={cocktail} />
       ))}
-    </ul>
+    </div>
   );
 }
 
