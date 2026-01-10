@@ -1,0 +1,8 @@
+Usage,Color Name,Hex Code,Purpose
+Background,Deep Navy,#0B0E14,"The main canvas. Keeps the ""dark mode"" vibe."
+Surface/Cards,Midnight Grey,#1C1F26,Use this for cards or containers to pop against the background.
+Primary,Electric Violet,#8A2BE2,"Primary branding, headers, and active states."
+Secondary/Links,Tropical Teal,#00CED1,"Secondary buttons, toggle switches, or filter chips."
+Call-to-Action,Dragonfruit Pink,#FF007F,"High-importance buttons (e.g., ""Add to Cart"" or ""Order"")."
+Text (Primary),Pure White,#FFFFFF,Main headings and labels for maximum contrast.
+Text (Secondary),Silver Mist,#A0A0A0,"Hint text, captions, and non-essential info."

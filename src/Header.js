@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 function Header() {
   return (
     <div className="header-wrapper">
-      <h1 className="header">Cocktails App</h1>
+      <h1 className="header">Vivid Pour</h1>
       <div className="nav-wrapper">
         <Navbar />
       </div>
