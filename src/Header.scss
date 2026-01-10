@@ -1,5 +1,5 @@
 .header-wrapper {
-  background-color: #0B0E14; // Your dark theme background
+  background-color: #0b0e14; // Your dark theme background
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 
   .logo-container {
     margin-bottom: 20px;
-    
+
     .header-logo {
       height: 20rem; // Adjust height to your liking
       width: auto;
@@ -19,6 +19,10 @@
         transform: scale(1.05); // Slight pop when hovered
       }
     }
+  }
+
+  .header-container {
+    display: flex;
   }
 
   .nav-wrapper {

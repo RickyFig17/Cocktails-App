@@ -8,20 +8,22 @@ import BostonShaker from "./BostonShaker";
 function Header() {
   return (
     <div className="header-wrapper">
-      <motion.div
-        className="logo-container"
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <img src={logo1} alt="Vivid Pour" className="header-logo" />
-      </motion.div>
+      <div className="header-container">
+        <div className="shaker-container">
+          <BostonShaker />
+        </div>
+        <motion.div
+          className="logo-container"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <img src={logo1} alt="Vivid Pour" className="header-logo" />
+        </motion.div>
+      </div>
 
       <div className="nav-wrapper">
         <Navbar />
-      </div>
-      <div className="shaker-container">
-        <BostonShaker />
       </div>
     </div>
   );
