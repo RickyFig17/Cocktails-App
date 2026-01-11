@@ -9,9 +9,9 @@ function Header() {
   return (
     <div className="header-wrapper">
       <div className="header-container">
-        <div className="shaker-container">
+        {/* <div className="shaker-container">
           <BostonShaker />
-        </div>
+        </div> */}
         <motion.div
           className="logo-container"
           initial={{ opacity: 0, y: -10 }}
