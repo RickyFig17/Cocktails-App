@@ -2,38 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const categories = [
+    { name: "2oz Cocktails", path: "/two-oz-cocktails" },
+    { name: "Tall Drinks", path: "/tall-drinks" },
+    { name: " Highballs", path: "/highballs" },
+    { name: " Cream Drinks and After Dinner Drinks", path: "/cream-drinks" },
+    { name: " Martinis", path: "/martinis" },
+    { name: " Sours And Margaritas", path: "/sours" },
+    { name: " Shooters", path: "/shooters" },
+    { name: " Wine Cocktails", path: "/wine-cocktails" },
+  ];
   return (
-    <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/two-oz-cocktails">2oz Cocktails</Link>
-        </li>
-        <li>
-          <Link to="/tall-drinks">Tall Drinks</Link>
-        </li>
-        <li>
-          <Link to="/highballs">Highballs</Link>
-        </li>
-        <li>
-          <Link to="/cream-drinks">Cream Drinks and After Dinner Drinks</Link>
-        </li>
-        <li>
-          <Link to="/martinis">Martinis</Link>
-        </li>
-        <li>
-          <Link to="/sours">Sours And Margaritas</Link>
-        </li>
-        <li>
-          <Link to="/shooters">Shooters</Link>
-        </li>
-        <li>
-          <Link to="/wine-cocktails">Wine Cocktails</Link>
-        </li>
+    <nav className="navbar">
+      <ul className="nav-list">
+        {categories.map((cat) => (
+          <li key={cat.path} className="nav-item">
+            <Link to={cat.path} className="nav-link">
+              {cat.name}
+            </Link>
+          </li>
+        ))}
       </ul>
-    </div>
+    </nav>
   );
 }
 

@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import logo1 from "./images/Logo1.png";
 import "./Header.scss";
 import BostonShaker from "./BostonShaker";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -18,10 +19,11 @@ function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src={logo1} alt="Vivid Pour" className="header-logo" />
+          <Link to="/">
+            <img src={logo1} alt="Vivid Pour" className="header-logo" />
+          </Link>
         </motion.div>
       </div>
-
       <div className="nav-wrapper">
         <Navbar />
       </div>

@@ -1,6 +1,7 @@
 .header-wrapper {
   background-color: #0b0e14; // Your dark theme background
   padding: 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +28,6 @@
 
   .nav-wrapper {
     width: 100%;
-    max-width: 600px;
+    // max-width: 600px;
   }
 }

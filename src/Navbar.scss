@@ -1,0 +1,33 @@
+.navbar {
+  padding: 20px;
+  background: #0b0e14;
+  width: 100%;
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; // This lets items wrap to the next line on small screens
+    gap: 15px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #8a2be2; // Violet border
+    border-radius: 25px;
+    color: #00ced1; // Teal text
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: rgba(138, 43, 226, 0.05);
+
+    &:hover {
+      background: #8a2be2;
+      color: white;
+      box-shadow: 0 0 15px #8a2be2;
+      transform: translateY(-2px);
+    }
+  }
+}
