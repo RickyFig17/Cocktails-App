@@ -5,7 +5,7 @@ import "./TallDrinks.scss";
 function TallDrinks() {
   return (
     <div className="talldrinks">
-      <h3>Tall Drinks</h3>
+      <h2>Tall Drinks</h2>
       <TallDrinksList />
     </div>
   );
