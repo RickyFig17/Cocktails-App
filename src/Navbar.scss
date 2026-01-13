@@ -5,17 +5,19 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 
   .pill-container {
     display: flex;
     justify-content: center;
-    overflow-x: auto;
+    // overflow-x: auto;
     gap: 12px;
     padding: 0 20px;
     list-style: none;
     scrollbar-width: none; // Hides scrollbar on Firefox
-    
+    margin: 0;
+    padding-bottom: 5px;
+
     &::-webkit-scrollbar {
       display: none; // Hides scrollbar on Chrome/Safari
     }
@@ -42,9 +44,9 @@
     &.active {
       color: #fff;
       background: rgba(0, 206, 209, 0.15); // Teal tint
-      border-color: #00CED1; // Solid Teal border
-      box-shadow: 0 0 15px rgba(0, 206, 209, 0.4), 
-                  inset 0 0 5px rgba(0, 206, 209, 0.2);
+      border-color: #00ced1; // Solid Teal border
+      box-shadow: 0 0 15px rgba(0, 206, 209, 0.4),
+        inset 0 0 5px rgba(0, 206, 209, 0.2);
       transform: scale(1.05);
     }
   }
