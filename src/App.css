@@ -15,3 +15,13 @@
   font-size: calc(10px + 2vmin);
 }
 
+.content-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 120px); /* Adjust based on your header height */
+  position: relative;
+}
+
+/* Ensure the motion div takes up full space */
+.content-wrapper > div {
+  width: 100%;
+}
