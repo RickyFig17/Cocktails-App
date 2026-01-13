@@ -16,8 +16,8 @@ function Header() {
         <motion.div
           className="logo-container"
           initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          animate={{ opacity: 5, y: 5 }}
+          transition={{ duration: 1 }}
         >
           <Link to="/">
             <img src={logo1} alt="Vivid Pour" className="header-logo" />
@@ -25,7 +25,14 @@ function Header() {
         </motion.div>
       </div>
       <div className="nav-wrapper">
-        <Navbar />
+        <motion.div
+          className="logo-container"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 5, y: 5 }}
+          transition={{ duration: 1 }}
+        >
+          <Navbar />
+        </motion.div>
       </div>
     </div>
   );
