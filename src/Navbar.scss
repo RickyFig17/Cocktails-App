@@ -1,33 +1,51 @@
-.navbar {
-  padding: 20px;
-  background: #0b0e14;
-  width: 100%;
+.premium-nav {
+  padding: 15px 0;
+  background: rgba(11, 14, 20, 0.8); // Dark semi-transparent
+  backdrop-filter: blur(10px); // The "Frosted Glass" effect
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 
-  .nav-list {
-    list-style: none;
+  .pill-container {
     display: flex;
-    flex-wrap: wrap; // This lets items wrap to the next line on small screens
-    gap: 15px;
-    padding: 0;
     justify-content: center;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 0 20px;
+    list-style: none;
+    scrollbar-width: none; // Hides scrollbar on Firefox
+    
+    &::-webkit-scrollbar {
+      display: none; // Hides scrollbar on Chrome/Safari
+    }
   }
 
-  .nav-link {
-    display: block;
-    padding: 10px 20px;
-    border: 1px solid #8a2be2; // Violet border
-    border-radius: 25px;
-    color: #00ced1; // Teal text
+  .nav-pill {
+    display: inline-block;
+    white-space: nowrap; // Keeps "Cream & After Dinner" on one line
+    padding: 8px 18px;
+    border-radius: 50px;
     text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    background: rgba(138, 43, 226, 0.05);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6); // Dimmed text for inactive
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      background: #8a2be2;
-      color: white;
-      box-shadow: 0 0 15px #8a2be2;
-      transform: translateY(-2px);
+      color: #fff;
+      border-color: rgba(0, 206, 209, 0.5); // Subtle teal hover
+    }
+
+    // THE HIGHLIGHTED TEAL STATE
+    &.active {
+      color: #fff;
+      background: rgba(0, 206, 209, 0.15); // Teal tint
+      border-color: #00CED1; // Solid Teal border
+      box-shadow: 0 0 15px rgba(0, 206, 209, 0.4), 
+                  inset 0 0 5px rgba(0, 206, 209, 0.2);
+      transform: scale(1.05);
     }
   }
 }

@@ -1,23 +1,23 @@
 .header-wrapper {
-  background-color: #0b0e14; // Your dark theme background
+  background-color: #0b0e14;
   padding: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid rgba(138, 43, 226, 0.2); // Subtle violet line
+  border-bottom: 1px solid rgba(138, 43, 226, 0.2);
 
   .logo-container {
     margin-bottom: 20px;
 
     .header-logo {
-      height: 20rem; // Adjust height to your liking
+      height: 20rem;
       width: auto;
-      filter: drop-shadow(0 0 10px rgba(0, 206, 209, 0.3)); // Soft Teal glow
+      filter: drop-shadow(0 0 10px rgba(0, 206, 209, 0.3));
       transition: transform 0.3s ease;
 
       &:hover {
-        transform: scale(1.05); // Slight pop when hovered
+        transform: scale(1.05);
       }
     }
   }
