@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Navbar.scss"
+import { Link, useLocation } from "react-router-dom";
+import "./Navbar.scss";
 
 function Navbar() {
-  const [activeTab, setActiveTab] = useState("2oz Cocktails");
+  const location = useLocation();
   const categories = [
     { name: "2oz Cocktails", path: "/two-oz-cocktails" },
     { name: "Tall Drinks", path: "/tall-drinks" },
@@ -19,10 +19,11 @@ function Navbar() {
       <ul className="pill-container">
         {categories.map((cat) => (
           <li key={cat.path}>
-            <Link 
-              to={cat.path} 
-              className={`nav-pill ${activeTab === cat.name ? "active" : ""}`}
-              onClick={() => setActiveTab(cat.name)}
+            <Link
+              to={cat.path}
+              className={`nav-pill ${
+                location.pathname === cat.path ? "active" : ""
+              }`}
             >
               {cat.name}
             </Link>
