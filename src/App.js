@@ -33,16 +33,22 @@ function App() {
   ];
 
   useEffect(() => {
-    const newIdx = pathOrder.indexOf(location.pathname);
-    const oldIdx = pathOrder.indexOf(prevPath);
-    setDirection(newIdx > oldIdx ? 1 : -1);
-    setPrevPath(location.pathname);
-    // Simulate the loading time (Duolingo style)
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2500);
     return () => clearTimeout(timer);
-  }, [location.pathname]);
+  }, []); // Empty array means this ONLY runs on first load
+
+  // --- 2. DIRECTION LOGIC ---
+  useEffect(() => {
+    const newIdx = pathOrder.indexOf(location.pathname);
+    const oldIdx = pathOrder.indexOf(prevPath);
+
+    if (newIdx !== oldIdx) {
+      setDirection(newIdx > oldIdx ? 1 : -1);
+      setPrevPath(location.pathname);
+    }
+  }, [location.pathname, prevPath]);
 
   const variants = {
     enter: (direction) => ({
@@ -54,7 +60,7 @@ function App() {
       opacity: 1,
     },
     exit: (direction) => ({
-      x: direction < 0 ? "100%" : "-100%",
+      x: direction < 0 ? "-100%" : "-100%",
       opacity: 0,
     }),
   };
@@ -91,7 +97,7 @@ function App() {
               opacity: { duration: 0.3 },
             }}
           >
-            <Routes>
+            <Routes location={location}>
               <Route path="/" element={<Home />} />
               <Route path="/two-oz-cocktails" element={<TwoOzCocktails />} />
               <Route path="/tall-drinks" element={<TallDrinks />} />
