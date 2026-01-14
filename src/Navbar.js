@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./Navbar.scss";
 
 function Navbar() {
@@ -17,8 +18,17 @@ function Navbar() {
   return (
     <nav className="premium-nav">
       <ul className="pill-container">
-        {categories.map((cat) => (
-          <li key={cat.path}>
+        {categories.map((cat, index) => (
+          <motion.li
+            key={cat.path}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              delay: index * 0.1, // This creates the staggered "wave"
+              duration: 0.5,
+              ease: "easeOut",
+            }}
+          >
             <Link
               to={cat.path}
               className={`nav-pill ${
@@ -27,7 +37,7 @@ function Navbar() {
             >
               {cat.name}
             </Link>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </nav>

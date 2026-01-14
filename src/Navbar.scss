@@ -67,3 +67,19 @@
     }
   }
 }
+
+@keyframes slideInPill {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav-item {
+  opacity: 0;
+  animation: slideInPill 0.5s ease forwards;
+}

@@ -12,13 +12,14 @@ import Martinis from "./Martinis";
 import Sours from "./Sours";
 import Shooters from "./Shooters";
 import WineCocktails from "./WineCocktails";
+import SplashScreen from "./SplashScreen";
 
 function App() {
+  const [loading, setLoading] = useState(true);
   const location = useLocation();
   const [direction, setDirection] = useState(0);
   const [prevPath, setPrevPath] = useState(location.pathname);
 
-  // Define the order of your tabs to calculate "left" or "right"
   const pathOrder = [
     "/",
     "/two-oz-cocktails",
@@ -34,10 +35,13 @@ function App() {
   useEffect(() => {
     const newIdx = pathOrder.indexOf(location.pathname);
     const oldIdx = pathOrder.indexOf(prevPath);
-
-    // If going to a higher index, slide left. If lower, slide right.
     setDirection(newIdx > oldIdx ? 1 : -1);
     setPrevPath(location.pathname);
+    // Simulate the loading time (Duolingo style)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+    return () => clearTimeout(timer);
   }, [location.pathname]);
 
   const variants = {
@@ -58,6 +62,18 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <AnimatePresence mode="wait">
+        {loading ? (
+          <SplashScreen key="splash" />
+        ) : (
+          <motion.div
+            key="main-content"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          ></motion.div>
+        )}
+      </AnimatePresence>
       <div
         className="content-wrapper"
         style={{ overflowX: "hidden", position: "relative" }}
@@ -75,7 +91,7 @@ function App() {
               opacity: { duration: 0.3 },
             }}
           >
-            <Routes location={location}>
+            <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/two-oz-cocktails" element={<TwoOzCocktails />} />
               <Route path="/tall-drinks" element={<TallDrinks />} />
