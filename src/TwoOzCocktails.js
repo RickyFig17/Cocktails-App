@@ -34,8 +34,8 @@ function TwoOzCocktailsList() {
   const cocktails = [
     {
       name: "Black Russian",
-      liquor1: "1oz Vodka",
-      liquor2: "1oz Kahlua",
+      Alcohol1: "1oz Vodka",
+      Alcohol2: "1oz Kahlua",
       filler: "",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -43,8 +43,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "White Russian",
-      liquor1: "1oz Vodka",
-      liquor2: "1oz Kahlua",
+      Alcohol1: "1oz Vodka",
+      Alcohol2: "1oz Kahlua",
       filler: "Splash Of Cream",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -52,8 +52,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Kahlua And Cream",
-      liquor1: "2oz Kahlua",
-      liquor2: "N/A",
+      Alcohol1: "2oz Kahlua",
+      Alcohol2: "N/A",
       filler: "Splash Of Cream",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -61,8 +61,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Toasted Almond",
-      liquor1: "1oz Amaretto",
-      liquor2: "1oz Kahlua",
+      Alcohol1: "1oz Amaretto",
+      Alcohol2: "1oz Kahlua",
       filler: "Splash of Cream",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -70,8 +70,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Gimlet",
-      liquor1: "2oz Gin",
-      liquor2: "N/A",
+      Alcohol1: "2oz Gin",
+      Alcohol2: "N/A",
       filler: "Splash of Rose's Lime Juice",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -79,8 +79,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Vodka Gimlet",
-      liquor1: "2oz Vodka",
-      liquor2: "N/A",
+      Alcohol1: "2oz Vodka",
+      Alcohol2: "N/A",
       filler: "Splash of Roses's Lime Juice",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -88,8 +88,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "God Father",
-      liquor1: "1oz Scotch",
-      liquor2: "1oz Amaretto",
+      Alcohol1: "1oz Scotch",
+      Alcohol2: "1oz Amaretto",
       filler: "N/A",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -97,8 +97,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "God Mother",
-      liquor1: "1oz Vodka",
-      liquor2: "1oz Amaretto",
+      Alcohol1: "1oz Vodka",
+      Alcohol2: "1oz Amaretto",
       filler: "N/A",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -106,8 +106,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Stinger",
-      liquor1: "1oz Brandy",
-      liquor2: "1oz White Creme de Menthe",
+      Alcohol1: "1oz Brandy",
+      Alcohol2: "1oz White Creme de Menthe",
       filler: "N/A",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -115,8 +115,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Colorado Bulldog",
-      liquor1: "1oz Vodka",
-      liquor2: "1oz Kahlua",
+      Alcohol1: "1oz Vodka",
+      Alcohol2: "1oz Kahlua",
       filler: "Splash of Coke and Cream",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -124,8 +124,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Kamikaze",
-      liquor1: "1oz Vodka",
-      liquor2: "1oz Triple Sec",
+      Alcohol1: "1oz Vodka",
+      Alcohol2: "1oz Triple Sec",
       filler: "Splash of Rose's Lime Juice",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -133,8 +133,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Rusty Nail",
-      liquor1: "1oz Scotch",
-      liquor2: "1oz Drambuie",
+      Alcohol1: "1oz Scotch",
+      Alcohol2: "1oz Drambuie",
       filler: "none",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
@@ -142,8 +142,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Old Fashion",
-      liquor1: "2oz Whiskey",
-      liquor2: "",
+      Alcohol1: "2oz Whiskey",
+      Alcohol2: "",
       filler:
         "1/2oz Simple Syrup, Orange Zest, 2-3 dashes of Bitters. Muddle Ingredients, add Ice",
       glass: "Rocks Glass",
@@ -191,11 +191,11 @@ function TwoOzCocktailsList() {
                   <h4>Ingredients</h4>
                   <ul>
                     <li>
-                      <strong>Base:</strong> {selectedCocktail.liquor1}
+                      <strong>Alcohol 1:</strong> {selectedCocktail.Alcohol1}
                     </li>
-                    {selectedCocktail.liquor2 !== "N/A" && (
+                    {selectedCocktail.Alcohol2 !== "N/A" && (
                       <li>
-                        <strong>Modifier:</strong> {selectedCocktail.liquor2}
+                        <strong>Alcohol 2:</strong> {selectedCocktail.Alcohol2}
                       </li>
                     )}
                     {selectedCocktail.filler && (

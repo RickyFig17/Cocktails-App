@@ -23,5 +23,12 @@
 /* Ensure the motion div takes up full space */
 .content-wrapper > div {
   position: absolute;
+  /* top: 0; */
+  /* left: 0; */
   width: 100%;
+  /* This ensures the content stays centered regardless of the slide */
+  /* display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column; */
 }

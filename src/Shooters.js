@@ -242,16 +242,31 @@ function ShootersList() {
                   <h4>Ingredients</h4>
                   <ul>
                     <li>
-                      <strong>Base:</strong> {selectedCocktail.liquor1}
+                      <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
                     </li>
                     {selectedCocktail.liquor2 !== "N/A" && (
                       <li>
-                        <strong>Modifier:</strong> {selectedCocktail.liquor2}
+                        <strong>Alcohol2:</strong> {selectedCocktail.alcohol2}
                       </li>
                     )}
-                    {selectedCocktail.filler && (
+                    {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
-                        <strong>Mixer:</strong> {selectedCocktail.filler}
+                        <strong>Alcohol3:</strong> {selectedCocktail.alcohol3}
+                      </li>
+                    )}
+                    {selectedCocktail.filler1 && (
+                      <li>
+                        <strong>Mixer1:</strong> {selectedCocktail.filler1}
+                      </li>
+                    )}
+                    {selectedCocktail.filler2 && (
+                      <li>
+                        <strong>Mixer2:</strong> {selectedCocktail.filler2}
+                      </li>
+                    )}
+                    {selectedCocktail.filler3 && (
+                      <li>
+                        <strong>Mixer3:</strong> {selectedCocktail.filler3}
                       </li>
                     )}
                   </ul>

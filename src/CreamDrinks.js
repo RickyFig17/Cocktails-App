@@ -147,11 +147,16 @@ function CreamDrinksList() {
                   <h4>Ingredients</h4>
                   <ul>
                     <li>
-                      <strong>Base:</strong> {selectedCocktail.liquor1}
+                      <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
                     </li>
-                    {selectedCocktail.liquor2 !== "N/A" && (
+                    {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
-                        <strong>Modifier:</strong> {selectedCocktail.liquor2}
+                        <strong>Alcohol2:</strong> {selectedCocktail.alcohol2}
+                      </li>
+                    )}
+                    {selectedCocktail.alcohol3 !== "N/A" && (
+                      <li>
+                        <strong>Alcohol3:</strong> {selectedCocktail.alcohol3}
                       </li>
                     )}
                     {selectedCocktail.filler && (
