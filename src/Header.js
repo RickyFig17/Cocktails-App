@@ -24,16 +24,16 @@ function Header() {
           </Link>
         </motion.div>
       </div>
-      <div className="nav-wrapper">
+      {/* <div className="nav-wrapper"> */}
         <motion.div
           className="logo-container"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 5, y: 5 }}
           transition={{ duration: 1 }}
         >
-          <Navbar />
         </motion.div>
-      </div>
+      {/* </div> */}
+          <Navbar />
     </div>
   );
 }
