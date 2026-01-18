@@ -4,8 +4,8 @@ import "./WineCocktails.scss";
 
 function WineCocktails() {
   return (
-    <div className="two-oz-cocktails">
-      <h2>2oz Cocktails</h2>
+    <div className="wine-cocktails">
+      <h2>Wine Cocktails</h2>
       <WineCocktailList />
     </div>
   );

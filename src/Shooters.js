@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import "./Shooters.scss";
 
 function Shooters() {
   return (
-    <div className="two-oz-cocktails">
-      <h2>2oz Cocktails</h2>
+    <div className="shooters-cocktails">
+      <h2>Shooters</h2>
       <ShootersList />
     </div>
   );

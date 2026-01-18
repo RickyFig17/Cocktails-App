@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import "./Sours.scss"
 
 function Sours() {
   return (
-    <div className="two-oz-cocktails">
-      <h2>2oz Cocktails</h2>
+    <div className="sour-cocktails">
+      <h2>Sours & Margaritas</h2>
       <SoursList />
     </div>
   );

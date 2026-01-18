@@ -338,12 +338,12 @@ function TallDrinksList() {
                         <strong>Alcohol 2:</strong> {selectedCocktail.alcohol2}
                       </li>
                     )}
-                     {selectedCocktail.alcohol3 !== "N/A" && (
+                    {selectedCocktail.alcohol3 !== "N/A" && (
                       <li>
                         <strong>Alcohol 3:</strong> {selectedCocktail.alcohol3}
                       </li>
                     )}
-                     {selectedCocktail.alcohol4 !== "N/A" && (
+                    {selectedCocktail.alcohol4 !== "N/A" && (
                       <li>
                         <strong>Alcohol 4:</strong> {selectedCocktail.alcohol4}
                       </li>
