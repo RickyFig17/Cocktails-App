@@ -143,7 +143,6 @@ function TwoOzCocktailsList() {
     {
       name: "Old Fashion",
       Alcohol1: "2oz Whiskey",
-      Alcohol2: "",
       filler:
         "1/2oz Simple Syrup, Orange Zest, 2-3 dashes of Bitters. Muddle Ingredients, add Ice",
       glass: "Rocks Glass",

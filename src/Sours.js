@@ -35,7 +35,6 @@ function SoursList() {
     {
       name: "Stone Sour",
       alcohol1: "1 1/2oz Whiskey",
-      alcohol2: "",
       filler1: "1oz Orange Juice",
       filler2: "1oz Sweet & Sour",
       glass: "Cocktail/Rocks",
@@ -45,9 +44,7 @@ function SoursList() {
     {
       name: "Amaretto Sour",
       alcohol1: "1 1/2oz Amaretto",
-      alcohol2: "",
       filler1: "2oz Sweet & Sour",
-      filler2: "",
       glass: "Cocktail/Rocks",
       mixingMethod: "Shake & Strain",
       garnish: "Flagg",
@@ -55,9 +52,7 @@ function SoursList() {
     {
       name: "Whiskey Sour",
       alcohol1: "1 1/2oz Whiskey",
-      alcohol2: "",
       filler1: "2oz Sweet & Sour",
-      filler2: "",
       glass: "Cocktail/Rocks",
       mixingMethod: "Shake & Strain",
       garnish: "Flagg",
@@ -65,9 +60,7 @@ function SoursList() {
     {
       name: "Rum Sour",
       alcohol1: "1 1/2oz Lt.Rum",
-      alcohol2: "",
       filler1: "2oz Sweet & Sour",
-      filler2: "",
       glass: "Cocktail/Rocks",
       mixingMethod: "Shake & Strain",
       garnish: "Flagg",
@@ -75,7 +68,6 @@ function SoursList() {
     {
       name: "Daiquiri",
       alcohol1: "1 1/2oz Lt.Rum",
-      alcohol2: "",
       filler1: "1oz Lime Juice",
       filler2: "1oz Simple Syrup",
       glass: "Cocktail/Rocks",
@@ -87,7 +79,6 @@ function SoursList() {
       alcohol1: "1 1/2oz Tequila",
       alcohol2: "1/2oz Triple Sec",
       filler1: "1 1/2oz Sweet & Sour",
-      filler2: "",
       glass: "Margarita",
       mixingMethod: "Shake & Strain",
       garnish: "Salt Rim & Lime Wedge",
@@ -96,8 +87,7 @@ function SoursList() {
       name: "Blue Margarita",
       alcohol1: "1 1/2oz Tequila",
       alcohol2: "1/2oz Blue Curacao",
-      filler1: "1 1/2oz Blue Curacao",
-      filler2: "",
+      filler1: "1 1/2oz Sweet & Sour",
       glass: "Margarita",
       mixingMethod: "Shake & Strain",
       garnish: "Salt Rim & Lime Wedge",

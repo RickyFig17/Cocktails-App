@@ -35,9 +35,7 @@ function WineCocktailList() {
     {
       name: "Spritzer",
       alcohol1: "1/2 White Wine",
-      alcohol2: "",
       filler1: "1/2 Soda",
-      filler2: "",
       glass: "Wine/Fancy",
       mixingMethod: "Pour",
       garnish: "Lemon Twist",
@@ -45,9 +43,7 @@ function WineCocktailList() {
     {
       name: "Mimosa",
       alcohol1: "1/2 Champagne",
-      alcohol2: "",
       filler1: "1/2 Orange Juice",
-      filler2: "",
       glass: "Flute/Fancy",
       mixingMethod: "Pour",
       garnish: "none",
