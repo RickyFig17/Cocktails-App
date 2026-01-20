@@ -37,7 +37,7 @@ function TwoOzCocktailsList() {
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1oz Kahlua",
-      filler: "",
+      filler: "N/A",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
       garnish: "none",
@@ -54,8 +54,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Kahlua And Cream",
-      alcohol: "N/A",
-      alcohol1: "2oz Kahlua",
+      alcohol: "2oz Kahlua",
+      alcohol1: "N/A",
       alcohol2: "N/A",
       filler: "Splash Of Cream",
       glass: "Rocks Glass",
@@ -74,8 +74,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Gimlet",
-      alcohol: "N/A",
-      alcohol1: "2oz Gin",
+      alcohol: "2oz Gin",
+      alcohol1: "N/A",
       alcohol2: "N/A",
       filler: "Splash of Rose's Lime Juice",
       glass: "Rocks Glass",
@@ -84,8 +84,8 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Vodka Gimlet",
-      alcohol: "N/A",
-      alcohol1: "2oz Vodka",
+      alcohol: "2oz Vodka",
+      alcohol1: "N/A",
       alcohol2: "N/A",
       filler: "Splash of Roses's Lime Juice",
       glass: "Rocks Glass",
@@ -147,15 +147,16 @@ function TwoOzCocktailsList() {
       alcohol: "N/A",
       alcohol1: "1oz Scotch",
       alcohol2: "1oz Drambuie",
-      filler: "none",
+      filler: "N/A",
       glass: "Rocks Glass",
       mixingMethod: "Build on Ice",
       garnish: "Lemon Peel",
     },
     {
       name: "Old Fashion",
-      alcohol: "N/A",
-      alcohol1: "2oz Whiskey",
+      alcohol: "2oz Whiskey",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
       filler:
         "1/2oz Simple Syrup, Orange Zest, 2-3 dashes of Bitters. Muddle Ingredients, add Ice",
       glass: "Rocks Glass",
@@ -202,15 +203,22 @@ function TwoOzCocktailsList() {
                 <div className="recipe-section">
                   <h4>Ingredients</h4>
                   <ul>
-                    <li>
-                      <strong>Alcohol 1:</strong> {selectedCocktail.alcohol1}
-                    </li>
+                    {selectedCocktail.alcohol !== "N/A" && (
+                      <li>
+                        <strong>Alcohol:</strong> {selectedCocktail.alcohol}
+                      </li>
+                    )}
+                    {selectedCocktail.alcohol1 !== "N/A" && (
+                      <li>
+                        <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
+                      </li>
+                    )}
                     {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
                         <strong>Alcohol 2:</strong> {selectedCocktail.alcohol2}
                       </li>
                     )}
-                    {selectedCocktail.filler && (
+                    {selectedCocktail.filler !== "N/A" && (
                       <li>
                         <strong>Mixer:</strong> {selectedCocktail.filler}
                       </li>
