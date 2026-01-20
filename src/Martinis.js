@@ -4,7 +4,7 @@ import "./Martinis.scss";
 
 function Martinis() {
   return (
-    <div className="two-oz-cocktails">
+    <div className="martinis-cocktails">
       <h2>Martinis</h2>
       <MartinisList />
     </div>

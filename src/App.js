@@ -13,6 +13,7 @@ import Sours from "./Sours";
 import Shooters from "./Shooters";
 import WineCocktails from "./WineCocktails";
 import SplashScreen from "./SplashScreen";
+import BottomBar from "./BottomBar";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -111,6 +112,7 @@ function App() {
           </motion.div>
         </AnimatePresence>
       </div>
+      <BottomBar />
     </div>
   );
 }

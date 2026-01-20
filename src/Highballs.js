@@ -34,6 +34,7 @@ function HighballList() {
   const cocktails = [
     {
       name: "Presbyterian",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Whiskey",
       alcohol2: "",
       filler1: "1oz Gingerale",
@@ -44,6 +45,7 @@ function HighballList() {
     },
     {
       name: "7 & 7",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Seagram's Seven",
       alcohol2: "",
       filler1: "2oz 7up",
@@ -54,6 +56,7 @@ function HighballList() {
     },
     {
       name: "Scotch & Soda",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Scotch",
       alcohol2: "",
       filler1: "2oz Soda",
@@ -64,6 +67,7 @@ function HighballList() {
     },
     {
       name: "Deward's & Soda",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Dewar's Scotch",
       alcohol2: "",
       filler1: "2oz Soda",
@@ -74,6 +78,7 @@ function HighballList() {
     },
     {
       name: "Bourbon & Coke",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Well Bourbon",
       alcohol2: "",
       filler1: "2oz Coke",
@@ -84,6 +89,7 @@ function HighballList() {
     },
     {
       name: "Rum & Coke",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Rum",
       alcohol2: "",
       filler1: "2oz Coke",
@@ -94,6 +100,7 @@ function HighballList() {
     },
     {
       name: "Bacardi & Coke",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Bacardi Rum",
       alcohol2: "",
       filler1: "2oz Coke",
@@ -104,6 +111,7 @@ function HighballList() {
     },
     {
       name: "Cuba Libre",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Lt. Rum",
       alcohol2: "",
       filler1: "2oz Coke",
@@ -114,6 +122,7 @@ function HighballList() {
     },
     {
       name: "Gin & Tonic",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Gin",
       alcohol2: "",
       filler1: "2oz Tonic Water",
@@ -124,6 +133,7 @@ function HighballList() {
     },
     {
       name: "Gin Rickey",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Soda",
       alcohol2: "",
       filler1: "2oz Soda",
@@ -134,6 +144,7 @@ function HighballList() {
     },
     {
       name: "Vodka & Tonic",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "2oz Tonic",
@@ -144,6 +155,7 @@ function HighballList() {
     },
     {
       name: "Screwdriver",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "2oz Orange Juice",
@@ -154,6 +166,7 @@ function HighballList() {
     },
     {
       name: "Greyhound",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "2oz Grapefruit Juice",
@@ -164,6 +177,7 @@ function HighballList() {
     },
     {
       name: "Salty Dog",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "2oz Grapefruit Juice",
@@ -174,6 +188,7 @@ function HighballList() {
     },
     {
       name: "Bloody Mary",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "2oz Bloody Mary Mix",
@@ -184,6 +199,7 @@ function HighballList() {
     },
     {
       name: "Cape Codder",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "2oz Cranberry Juice",
@@ -194,6 +210,7 @@ function HighballList() {
     },
     {
       name: "Sea Breeze",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "1oz Cranberry Juice",
@@ -204,6 +221,7 @@ function HighballList() {
     },
     {
       name: "Bay Breeze",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "1oz Cranberry Juice",
@@ -214,6 +232,7 @@ function HighballList() {
     },
     {
       name: "Madras",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "1oz Cranberry Juice",
@@ -224,6 +243,7 @@ function HighballList() {
     },
     {
       name: "Harvey Wallbanger",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "2oz Orange Juice",
@@ -234,6 +254,7 @@ function HighballList() {
     },
     {
       name: "Fuzzy Navel",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Peach Schnapps",
       alcohol2: "",
       filler1: "2oz Orange Juice",
@@ -244,6 +265,7 @@ function HighballList() {
     },
     {
       name: "Hairy Navel",
+      alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
       filler1: "2oz Orange Juice",
@@ -254,6 +276,7 @@ function HighballList() {
     },
     {
       name: "Sloe Screw",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Sloe Gin",
       alcohol2: "",
       filler1: "2oz Orange Juice",
@@ -264,6 +287,7 @@ function HighballList() {
     },
     {
       name: "Sloe Comfortable Screw",
+      alcohol: "N/A",
       alcohol1: "1oz Southern Comfort",
       alcohol2: "1/2oz Sloe Gin",
       filler1: "2oz Orange Juice",
@@ -274,6 +298,7 @@ function HighballList() {
     },
     {
       name: "Tequila Sunrise",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Tequila",
       alcohol2: "",
       filler1: "2oz Orange Juice",
@@ -284,6 +309,7 @@ function HighballList() {
     },
     {
       name: "Moscow Mule",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "Ginger Beer",
@@ -294,6 +320,7 @@ function HighballList() {
     },
     {
       name: "Ranch Water",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Tequila",
       alcohol2: "",
       filler1: "2oz Club Soda (Topo Chico)",
@@ -304,6 +331,7 @@ function HighballList() {
     },
     {
       name: "Menage a Trois",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "1oz Cranberry Juice",
@@ -314,6 +342,7 @@ function HighballList() {
     },
     {
       name: "jeweler's Hammer",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "",
       filler1: "1oz White Grape Juice",
@@ -324,6 +353,7 @@ function HighballList() {
     },
     {
       name: "Americano",
+      alcohol: "N/A",
       alcohol1: "3/4oz Campari",
       alcohol2: "3/4oz Sweet Vermouth",
       filler1: "2oz Club Soda",
@@ -334,6 +364,7 @@ function HighballList() {
     },
     {
       name: "Mint Julep",
+      alcohol: "N/A",
       alcohol1: "2oz Bourbon",
       alcohol2: "",
       filler1: "",

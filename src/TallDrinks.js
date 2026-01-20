@@ -34,6 +34,7 @@ function TallDrinksList() {
   const cocktails = [
     {
       name: "Tom Collins",
+      alcohol: "N/A",
       alcohol1: "2oz Gin",
       filler1: "2oz Sweet & Sour Mix",
       top: "1oz Soda (Top)",
@@ -43,6 +44,7 @@ function TallDrinksList() {
     },
     {
       name: "John Collins",
+      alcohol: "N/A",
       alcohol1: "2oz Whiskey",
       filler1: "2oz Sweet & Sour Mix",
       top: "1oz Soda",
@@ -52,6 +54,7 @@ function TallDrinksList() {
     },
     {
       name: "Sloe Gin Fizz",
+      alcohol: "N/A",
       alcohol1: "2oz Sloe Gin",
       filler1: "2oz Sweet & Sour",
       top: "1oz Soda",
@@ -61,6 +64,7 @@ function TallDrinksList() {
     },
     {
       name: "Lynchburg Lemonade",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Jack Daniels",
       alcohol2: "1/2oz Triple Sec",
       filler1: "3oz Sweet & Sour",
@@ -71,6 +75,7 @@ function TallDrinksList() {
     },
     {
       name: "Blue Hawaiian",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Lt. Rum",
       alcohol2: "1/2oz Blue Curacao",
       filler1: "3oz Pinneapple Juice",
@@ -81,6 +86,7 @@ function TallDrinksList() {
     },
     {
       name: "Sex on the Beach",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
       filler1: "1oz Orange Juice",
@@ -91,6 +97,7 @@ function TallDrinksList() {
     },
     {
       name: "Bahama Mama",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Lt. Rum",
       alcohol2: "1/2oz Malibu Rum",
       alcohol3: "1/2oz Creme de Banana",
@@ -103,6 +110,7 @@ function TallDrinksList() {
     },
     {
       name: "Rum Runner",
+      alcohol: "N/A",
       alcohol1: "1oz Lt. Rum",
       alcohol2: "1/2oz Blackberry Brandy",
       alcohol3: "1/2oz Creme de Banana",
@@ -116,6 +124,7 @@ function TallDrinksList() {
     },
     {
       name: "Mai Tai",
+      alcohol: "N/A",
       alcohol1: "1/2oz Lt. Rum",
       alcohol2: "1/2oz Triple sec",
       alcohol3: "1/2oz Creme de Almond",
@@ -127,6 +136,7 @@ function TallDrinksList() {
     },
     {
       name: "Long Island Tea",
+      alcohol: "N/A",
       alcohol1: "1/2oz Vodka",
       alcohol2: "1/2oz Gin",
       alcohol3: "1/2oz Rum",
@@ -140,6 +150,7 @@ function TallDrinksList() {
     },
     {
       name: "Electric Lemonade",
+      alcohol: "N/A",
       alcohol1: "1/2oz Vodka",
       alcohol2: "1/2oz Gin",
       alcohol3: "1/2oz Rum",
@@ -153,6 +164,7 @@ function TallDrinksList() {
     },
     {
       name: "Miami Ice",
+      alcohol: "N/A",
       alcohol1: "1/2oz Vodka",
       alcohol2: "1/2oz Gin",
       alcohol3: "1/2oz Rum",
@@ -166,6 +178,7 @@ function TallDrinksList() {
     },
     {
       name: "Long Beach Tea",
+      alcohol: "N/A",
       alcohol1: "1/2oz Vodka",
       alcohol2: "1/2oz Gin",
       alcohol3: "1/2oz Rum",
@@ -180,6 +193,7 @@ function TallDrinksList() {
     },
     {
       name: "Liquid Marijuana",
+      alcohol: "N/A",
       alcohol1: "1/2oz Captain Morgan",
       alcohol2: "1/2oz Blue Curacao",
       alcohol3: "1/2oz Malibu",
@@ -192,6 +206,7 @@ function TallDrinksList() {
     },
     {
       name: "Mojito",
+      alcohol: "N/A",
       alcohol1: "2oz Bacardi Rum",
       filler1: "1oz Simple Syrup",
       filler2: "1oz Lime Juice",
@@ -204,6 +219,7 @@ function TallDrinksList() {
     },
     {
       name: "Frozen Strawberry Daiquiri",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Lt. Rum",
       filler1: "3oz Strawberry Daiqiri mix or Strawberry puree",
       filler2: "1/2oz Sweet & Sour",
@@ -214,6 +230,7 @@ function TallDrinksList() {
     },
     {
       name: "Frozen Pina Colada",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Lt. Rum",
       alcohol2: "3 1/2oz Pina Colada Mix",
       filler1: "2oz Sweet & Sour",
