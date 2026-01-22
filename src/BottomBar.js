@@ -1,46 +1,34 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom"; // Swapped Link for NavLink
+import { Home, Heart, Search } from "lucide-react"; // 1. Import the icons
 import "./BottomBar.scss";
 
 const BottomBar = () => {
   const navigate = useNavigate();
 
-  const paths = [
-    "/two-oz-cocktails",
-    "/tall-drinks",
-    "/highballs",
-    "/cream-drinks",
-    "/martinis",
-    "/sours",
-    "/shooters",
-    "/wine-cocktails",
-  ];
-
-  const handleSurprise = () => {
-    const randomPath = paths[Math.floor(Math.random() * paths.length)];
-    navigate(randomPath);
-  };
-
   return (
     <nav className="bottom-bar">
-      <Link to="/" className="nav-item">
-        <span className="icon">🏠</span>
+      {/* HOME TAB */}
+      <NavLink to="/" className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}>
+        <Home size={24} strokeWidth={1.5} /> {/* 2. Icon goes here (replaces span) */}
         <span className="label">Home</span>
-      </Link>
+      </NavLink>
 
+      {/* FAVORITES TAB (Replacing Surprise) */}
+      <NavLink to="/favorites" className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}>
+        <Heart size={24} strokeWidth={1.5} /> {/* 2. Icon goes here */}
+        <span className="label">Favorites</span>
+      </NavLink>
+
+      {/* SEARCH BUTTON */}
       <button
         className="nav-item"
         onClick={() => {
           /* Search Logic later */
         }}
       >
-        <span className="icon">🔍</span>
+        <Search size={24} strokeWidth={1.5} /> {/* 2. Icon goes here */}
         <span className="label">Search</span>
-      </button>
-
-      <button className="nav-item" onClick={handleSurprise}>
-        <span className="icon">🎲</span>
-        <span className="label">Surprise</span>
       </button>
     </nav>
   );
