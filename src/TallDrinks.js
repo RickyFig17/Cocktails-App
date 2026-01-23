@@ -34,9 +34,16 @@ function TallDrinksList() {
   const cocktails = [
     {
       name: "Tom Collins",
-      alcohol: "N/A",
-      alcohol1: "2oz Gin",
-      filler1: "2oz Sweet & Sour Mix",
+      alcohol: "2oz Gin",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "2oz Sweet & Sour Mix",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       top: "1oz Soda (Top)",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
@@ -44,9 +51,16 @@ function TallDrinksList() {
     },
     {
       name: "John Collins",
-      alcohol: "N/A",
-      alcohol1: "2oz Whiskey",
-      filler1: "2oz Sweet & Sour Mix",
+      alcohol: "2oz Whiskey",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "2oz Sweet & Sour Mix",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       top: "1oz Soda",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
@@ -54,9 +68,16 @@ function TallDrinksList() {
     },
     {
       name: "Sloe Gin Fizz",
-      alcohol: "N/A",
-      alcohol1: "2oz Sloe Gin",
-      filler1: "2oz Sweet & Sour",
+      alcohol: "2oz Sloe Gin",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "2oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       top: "1oz Soda",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
@@ -67,7 +88,13 @@ function TallDrinksList() {
       alcohol: "N/A",
       alcohol1: "1 1/2oz Jack Daniels",
       alcohol2: "1/2oz Triple Sec",
-      filler1: "3oz Sweet & Sour",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "3oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       top: "Top with 7up",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
@@ -78,7 +105,13 @@ function TallDrinksList() {
       alcohol: "N/A",
       alcohol1: "1 1/2oz Lt. Rum",
       alcohol2: "1/2oz Blue Curacao",
-      filler1: "3oz Pinneapple Juice",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "3oz Pinneapple Juice/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       top: "Top Soda",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
@@ -89,8 +122,13 @@ function TallDrinksList() {
       alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
       filler1: "1oz Orange Juice",
       filler2: "1oz Cranberry Juice",
+      filler3: "N/A",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
       garnish: "Flag",
@@ -101,6 +139,9 @@ function TallDrinksList() {
       alcohol1: "1 1/2oz Lt. Rum",
       alcohol2: "1/2oz Malibu Rum",
       alcohol3: "1/2oz Creme de Banana",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
       filler1: "1/2oz Grenadine",
       filler2: "1oz Orange Juice",
       filler3: "1oz Pinneapple Juice",
@@ -114,6 +155,9 @@ function TallDrinksList() {
       alcohol1: "1oz Lt. Rum",
       alcohol2: "1/2oz Blackberry Brandy",
       alcohol3: "1/2oz Creme de Banana",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
       filler1: "1/2oz Grenadine",
       filler2: "1 1/2oz Orange Juice",
       filler3: "1 1/2oz Pinneapple Juice",
@@ -128,8 +172,12 @@ function TallDrinksList() {
       alcohol1: "1/2oz Lt. Rum",
       alcohol2: "1/2oz Triple sec",
       alcohol3: "1/2oz Creme de Almond",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
       filler1: "1/2oz Grenadine",
       filler2: "3oz Sweet & Sour",
+      filler3: "N/A",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
       garnish: "Flag",
@@ -142,7 +190,10 @@ function TallDrinksList() {
       alcohol3: "1/2oz Rum",
       alcohol4: "1/2oz Tequila",
       alcohol5: "1/2oz Triple Sec",
-      filler1: "2oz Sweet & Sour",
+      filler: "2oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       top: "Top with Coke",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
@@ -156,7 +207,10 @@ function TallDrinksList() {
       alcohol3: "1/2oz Rum",
       alcohol4: "1/2oz Tequila",
       alcohol5: "1/2oz Triple Sec",
-      filler1: "2oz Sweet & Sour",
+      filler: "2oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       top: "Top with 7up",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
@@ -170,7 +224,10 @@ function TallDrinksList() {
       alcohol3: "1/2oz Rum",
       alcohol4: "1/2oz Tequila",
       alcohol5: "1/2oz Blue Curacao",
-      filler1: "2oz Sweet & Sour",
+      filler: "2oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       top: "7up",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
@@ -184,8 +241,10 @@ function TallDrinksList() {
       alcohol3: "1/2oz Rum",
       alcohol4: "1/2oz Tequila",
       alcohol5: "1/2oz Triple Sec",
+      filler: "N/A",
       filler1: "1oz Sweet & Sour",
       filler2: "1oz Cranberry Juice",
+      filler3: "N/A",
       top: "Soda or 7up",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
@@ -198,18 +257,27 @@ function TallDrinksList() {
       alcohol2: "1/2oz Blue Curacao",
       alcohol3: "1/2oz Malibu",
       alcohol4: "1/2oz Midori",
+      alcohol5: "N/A",
+      filler: "N/A",
       filler1: "1 1/2oz Pinneapple Juice",
       filler2: "1 1/2oz Sweet & Sour",
+      filler3: "N/A",
       glass: "Tall Glass",
       mixingMethod: "Build & Shake",
       garnish: "Pinneapple Wedge",
     },
     {
       name: "Mojito",
-      alcohol: "N/A",
-      alcohol1: "2oz Bacardi Rum",
+      alcohol: "2oz Bacardi Rum",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
       filler1: "1oz Simple Syrup",
       filler2: "1oz Lime Juice",
+      filler3: "N/A",
       top: "Soda",
       glass: "Tall Glass",
       mixingMethod: "Swirl",
@@ -219,10 +287,16 @@ function TallDrinksList() {
     },
     {
       name: "Frozen Strawberry Daiquiri",
-      alcohol: "N/A",
-      alcohol1: "1 1/2oz Lt. Rum",
+      alcohol: "1 1/2oz Lt. Rum",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
       filler1: "3oz Strawberry Daiqiri mix or Strawberry puree",
       filler2: "1/2oz Sweet & Sour",
+      filler3: "N/A",
       glass: "Specialty",
       mixingMethod: "Blend",
       garnish: "Sugar Rim & Whip Cream",
@@ -233,7 +307,13 @@ function TallDrinksList() {
       alcohol: "N/A",
       alcohol1: "1 1/2oz Lt. Rum",
       alcohol2: "3 1/2oz Pina Colada Mix",
-      filler1: "2oz Sweet & Sour",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "2oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Specialty",
       mixingMethod: "Blend",
       garnish: "Pinneapple Wedge & Whip Cream",
@@ -278,9 +358,16 @@ function TallDrinksList() {
                 <div className="recipe-section">
                   <h4>Ingredients</h4>
                   <ul>
-                    <li>
-                      <strong>Alcohol 1:</strong> {selectedCocktail.alcohol1}
-                    </li>
+                    {selectedCocktail.alcohol !== "N/A" && (
+                      <li>
+                        <strong>Alcohol:</strong> {selectedCocktail.alcohol}
+                      </li>
+                    )}
+                    {selectedCocktail.alcohol1 !== "N/A" && (
+                      <li>
+                        <strong>Alcohol 1:</strong> {selectedCocktail.alcohol1}
+                      </li>
+                    )}
                     {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
                         <strong>Alcohol 2:</strong> {selectedCocktail.alcohol2}
@@ -301,17 +388,22 @@ function TallDrinksList() {
                         <strong>Alcohol 5:</strong> {selectedCocktail.alcohol5}
                       </li>
                     )}
-                    {selectedCocktail.filler1 && (
+                    {selectedCocktail.filler !== "N/A" && (
+                      <li>
+                        <strong>Mixer:</strong> {selectedCocktail.filler}
+                      </li>
+                    )}
+                    {selectedCocktail.filler1 !== "N/A" && (
                       <li>
                         <strong>Mixer1:</strong> {selectedCocktail.filler1}
                       </li>
                     )}
-                    {selectedCocktail.filler2 && (
+                    {selectedCocktail.filler2 !== "N/A" && (
                       <li>
                         <strong>Mixer2:</strong> {selectedCocktail.filler2}
                       </li>
                     )}
-                    {selectedCocktail.filler3 && (
+                    {selectedCocktail.filler3 !== "N/A" && (
                       <li>
                         <strong>Mixer3:</strong> {selectedCocktail.filler3}
                       </li>
