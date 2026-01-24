@@ -34,96 +34,157 @@ function MartinisList() {
   const cocktails = [
     {
       name: "Martini",
-      alcohol1: "1oz Dry Vermouth",
-      alcohol2: "2oz Gin",
-      filler1: "",
+      alcohol: "N/A",
+      alcohol1: "2oz Gin",
+      alcohol2: "1oz Dry Vermouth",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Stir & Strain",
       garnish: "Olive",
     },
     {
       name: "Dry Martini",
-      alcohol1: "1/2oz Dry Vermouth",
-      alcohol2: "2oz Gin",
-      filler1: "",
+      alcohol: "N/A",
+      alcohol1: "2oz Gin",
+      alcohol2: "1/2oz Dry Vermouth",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Stir & Strain",
       garnish: "Olive",
     },
     {
       name: "Manhattan",
-      alcohol1: "1oz Sweet Vermouth",
-      alcohol2: "2oz Whiskey or Bourbon",
-      filler1: "",
+      alcohol: "N/A",
+      alcohol1: "2oz Whiskey or Bourbon",
+      alcohol2: "1oz Sweet Vermouth",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Stir & Strain",
       garnish: "Cherry",
     },
     {
       name: "Dry Manhattan",
-      alcohol1: "1oz Dry Vermouth",
-      alcohol2: "2oz Whiskey or Bourbon",
+      alcohol: "N/A",
+      alcohol1: "2oz Whiskey or Bourbon",
+      alcohol2: "1oz Dry Vermouth",
       alcohol3: "2-3 Dashes of Bitters",
-      filler1: "",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Stir & Strain",
       garnish: "Lemon Twist",
     },
     {
       name: "Perfect Manhattan",
-      alcohol1: "1oz Sweet Vermouth",
-      alcohol2: "1oz Dry Vermouth",
-      alcohol3: "2oz Whiskey or Bourbon",
+      alcohol: "N/A",
+      alcohol1: "2oz Whiskey or Bourbon",
+      alcohol2: "1oz Sweet Vermouth",
+      alcohol3: "1oz Dry Vermouth",
       alcohol4: "2-3 Dashes of Bitters",
-      filler1: "",
+      alcohol5: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Stir & Strain",
       garnish: "Lemon Twist",
     },
     {
       name: "Gibson",
-      alcohol1: "1oz Dry Vermouth",
-      alcohol2: "2oz Gin",
-      filler1: "",
+      alcohol: "N/A",
+      alcohol1: "2oz Gin",
+      alcohol2: "1oz Dry Vermouth",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Stir & Strain",
       garnish: "Three Cocktail Onions on a Stick",
     },
     {
       name: "Rob Roy",
-      alcohol1: "1oz Sweet Vermouth",
-      alcohol2: "2oz Scotch",
+      alcohol: "N/A",
+      alcohol1: "2oz Scotch",
+      alcohol2: "1oz Sweet Vermouth",
       alcohol3: "2-3 Dashes of Bitters",
-      filler1: "",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Stir & Strain",
       garnish: "Cherry",
     },
     {
       name: "Dry Rob Roy",
-      alcohol1: "1/2oz Dry Vermouth",
-      alcohol2: "2oz Scotch",
+      alcohol: "N/A",
+      alcohol1: "2oz Scotch",
+      alcohol2: "1/2oz Dry Vermouth",
       alcohol3: "2-3 Dashes of Bitters",
-      filler1: "",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Stir & Strain",
       garnish: "Lemon Twist",
     },
     {
       name: "Perfect Rob Roy",
-      alcohol1: "1oz Dry Vermouth",
-      alcohol2: "1oz Sweet Vermouth",
-      alcohol3: "2oz Scotch",
+      alcohol: "N/A",
+      alcohol1: "2oz Scotch",
+      alcohol2: "1oz Dry Vermouth",
+      alcohol3: "1oz Sweet Vermouth",
       alcohol4: "2-3 Dashes of Bitters",
-      filler1: "",
+      alcohol5: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Stir & Strain",
       garnish: "Lemon Twist",
     },
     {
       name: "Cosmopolitan",
+      alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Cointreau",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
       filler1: "3/4oz Simple Syrup",
       filler2: "3/4oz Lime Juice",
       filler3: "Splash of Cranberry Juice",
@@ -133,65 +194,96 @@ function MartinisList() {
     },
     {
       name: "Negroni",
-      alcohol1: "3/4oz Sweet Vermouth",
-      alcohol2: "3/4oz Campari",
-      alcohol3: "3/4oz Gin",
-      filler1: "",
-      filler2: "",
+      alcohol: "N/A",
+      alcohol1: "3/4oz Gin",
+      alcohol2: "3/4oz Sweet Vermouth",
+      alcohol3: "3/4oz Campari",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Stir & Strain",
       garnish: "Orange Peel",
     },
     {
       name: "Apple Martini",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "1oz Sour Apple Schnapps",
-      filler1: "1 1/2-2oz Sour Mix or Lemon Sour Mix",
-      filler2: "",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "1 1/2-2oz Sour Mix or Lemon Sour Mix",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Shake & Strain",
       garnish: "Apple Wedge or Cherry",
     },
     {
       name: "Vieux Carre",
+      alcohol: "N/A",
       alcohol1: "1/2oz Rye Whiskey",
       alcohol2: "1/2oz Cognac",
       alcohol3: "1/2oz Benedictine",
       alcohol4: "1/2oz Sweet Vermouth",
       alcohol5: "2-3 Dashes of Angostura & Peychauds Bitters",
-      filler1: "",
-      filler2: "",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini or Cocktail",
       mixingMethod: "Stir & Strain",
       garnish: "Lemon Twist, Cocktail Cherry",
     },
     {
       name: "Aviation",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Gin",
       alcohol2: "1/2oz Luxardo",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
       filler1: "3/4oz Lemon Juice",
       filler2: "1/4oz Creme de Violette",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Shake & Double Strain",
       garnish: "Luxardo Cherry",
     },
     {
       name: "Espresso Martini",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "1oz Kahlua, Tia Maria or Mr. Black",
+      alcohol3: "N/A",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "N/A",
       filler1: "1oz Espresso",
       filler2: "Simple Syrup & Vanilla Extract Optional",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Shake & Strain",
       garnish: "3 Coffee Beans",
     },
     {
       name: "The Last Word",
+      alcohol: "N/A",
       alcohol1: "3/4oz Gin",
       alcohol2: "3/4oz Luxardo",
       alcohol3: "3/4oz Green Charteuse",
-      filler1: "3/4oz Lime Juice",
-      filler2: "",
+      alcohol4: "N/A",
+      alcohol5: "N/A",
+      filler: "3/4oz Lime Juice",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Martini",
       mixingMethod: "Shake & Double Strain",
       garnish: "Cherry",
@@ -236,9 +328,16 @@ function MartinisList() {
                 <div className="recipe-section">
                   <h4>Ingredients</h4>
                   <ul>
-                    <li>
-                      <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
-                    </li>
+                    {selectedCocktail.alcohol !== "N/A" && (
+                      <li>
+                        <strong>Alcohol:</strong> {selectedCocktail.alcohol}
+                      </li>
+                    )}
+                    {selectedCocktail.alcohol1 !== "N/A" && (
+                      <li>
+                        <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
+                      </li>
+                    )}
                     {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
                         <strong>Alcohol2:</strong> {selectedCocktail.alcohol2}
@@ -254,17 +353,27 @@ function MartinisList() {
                         <strong>Alcohol4:</strong> {selectedCocktail.alcohol4}
                       </li>
                     )}
-                    {selectedCocktail.filler1 && (
+                    {selectedCocktail.alcohol5 !== "N/A" && (
+                      <li>
+                        <strong>Alcohol5:</strong> {selectedCocktail.alcohol5}
+                      </li>
+                    )}
+                    {selectedCocktail.filler !== "N/A" && (
+                      <li>
+                        <strong>Mixer:</strong> {selectedCocktail.filler}
+                      </li>
+                    )}
+                    {selectedCocktail.filler1 !== "N/A" && (
                       <li>
                         <strong>Mixer1:</strong> {selectedCocktail.filler1}
                       </li>
                     )}
-                    {selectedCocktail.filler2 && (
+                    {selectedCocktail.filler2 !== "N/A" && (
                       <li>
                         <strong>Mixer2:</strong> {selectedCocktail.filler2}
                       </li>
                     )}
-                    {selectedCocktail.filler3 && (
+                    {selectedCocktail.filler3 !== "N/A" && (
                       <li>
                         <strong>Mixer3:</strong> {selectedCocktail.filler3}
                       </li>
