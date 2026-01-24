@@ -34,8 +34,10 @@ function CreamDrinksList() {
   const cocktails = [
     {
       name: "Grasshopper",
+      alcohol: "N/A",
       alcohol1: "1oz White Creme de Cacao",
       alcohol2: "1oz Green Creme de Menthe",
+      alcohol3: "N/A",
       filler: "Cream",
       glass: "Cocktail",
       mixingMethod: "Shake & Strain",
@@ -43,8 +45,10 @@ function CreamDrinksList() {
     },
     {
       name: "Pink Squirrel",
+      alcohol: "N/A",
       alcohol1: "1oz White Creme de Cacao",
       alcohol2: "1oz Creme de Almond (Noyeaux)",
+      alcohol3: "N/A",
       filler: "2oz Cream",
       glass: "Cocktail",
       mixingMethod: "Shake & Strain",
@@ -52,8 +56,10 @@ function CreamDrinksList() {
     },
     {
       name: "Brandy Alexander",
+      alcohol: "N/A",
       alcohol1: "1oz Brown Creme de Cacao",
       alcohol2: "1oz Brandy",
+      alcohol3: "N/A",
       filler: "2oz Cream",
       glass: "Cocktail",
       mixingMethod: "Shake & Strain",
@@ -61,8 +67,10 @@ function CreamDrinksList() {
     },
     {
       name: "Alexander",
+      alcohol: "N/A",
       alcohol1: "1oz Brown Creme de Cacao",
       alcohol2: "1oz Gin",
+      alcohol3: "N/A",
       filler: "2oz Cream",
       glass: "Cocktail",
       mixingMethod: "Shake & Strain",
@@ -70,6 +78,7 @@ function CreamDrinksList() {
     },
     {
       name: "Mudslide",
+      alcohol: "N/A",
       alcohol1: "3/4oz Vodka",
       alcohol2: "3/4oz Bailey's Irish Cream",
       alcohol3: "3/4oz Kahlua",
@@ -80,8 +89,10 @@ function CreamDrinksList() {
     },
     {
       name: "Irish Coffee",
-      alcohol1: "1 1/2oz Irish Whiskey",
-      alcohol2: "",
+      alcohol: "1 1/2oz Irish Whiskey",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      alcohol3: "N/A",
       filler: "Fill with Hot Coffee",
       glass: "Irish Coffee",
       mixingMethod: "Pour",
@@ -89,6 +100,7 @@ function CreamDrinksList() {
     },
     {
       name: "Keoke Coffee",
+      alcohol: "N/A",
       alcohol1: "3/4oz Brandy (First Ingredient)",
       alcohol2: "3/4oz Kahlua",
       alcohol3: "3/4oz Brown Creme de Cacao",
@@ -99,8 +111,10 @@ function CreamDrinksList() {
     },
     {
       name: "Nutty Irishman",
+      alcohol: "N/A",
       alcohol1: "1oz Bailey's Irish Cream",
       alcohol2: "1oz Frangelico",
+      alcohol3: "N/A",
       filler: "Fill with Hot Coffee",
       glass: "Irish Coffee",
       mixingMethod: "Pour",
@@ -146,9 +160,16 @@ function CreamDrinksList() {
                 <div className="recipe-section">
                   <h4>Ingredients</h4>
                   <ul>
-                    <li>
-                      <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
-                    </li>
+                    {selectedCocktail.alcohol !== "N/A" && (
+                      <li>
+                        <strong>Alcohol:</strong> {selectedCocktail.alcohol}
+                      </li>
+                    )}
+                    {selectedCocktail.alcohol1 !== "N/A" && (
+                      <li>
+                        <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
+                      </li>
+                    )}
                     {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
                         <strong>Alcohol2:</strong> {selectedCocktail.alcohol2}
