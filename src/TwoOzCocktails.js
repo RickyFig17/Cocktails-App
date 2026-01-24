@@ -210,7 +210,7 @@ function TwoOzCocktailsList() {
                     )}
                     {selectedCocktail.alcohol1 !== "N/A" && (
                       <li>
-                        <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
+                        <strong>Alcohol 1:</strong> {selectedCocktail.alcohol1}
                       </li>
                     )}
                     {selectedCocktail.alcohol2 !== "N/A" && (

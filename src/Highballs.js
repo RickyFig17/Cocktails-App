@@ -452,12 +452,12 @@ function HighballList() {
                     )}
                     {selectedCocktail.alcohol1 !== "N/A" && (
                       <li>
-                        <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
+                        <strong>Alcohol 1:</strong> {selectedCocktail.alcohol1}
                       </li>
                     )}
                     {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
-                        <strong>Alcohol2:</strong> {selectedCocktail.alcohol2}
+                        <strong>Alcohol 2:</strong> {selectedCocktail.alcohol2}
                       </li>
                     )}
                     {selectedCocktail.filler !== "N/A" && (
@@ -467,12 +467,12 @@ function HighballList() {
                     )}
                     {selectedCocktail.filler1 !== "N/A" && (
                       <li>
-                        <strong>Mixer1:</strong> {selectedCocktail.filler1}
+                        <strong>Mixer 1:</strong> {selectedCocktail.filler1}
                       </li>
                     )}
                     {selectedCocktail.filler2 !== "N/A" && (
                       <li>
-                        <strong>Mixer2:</strong> {selectedCocktail.filler2}
+                        <strong>Mixer 2:</strong> {selectedCocktail.filler2}
                       </li>
                     )}
                   </ul>

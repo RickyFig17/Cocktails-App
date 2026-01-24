@@ -395,17 +395,17 @@ function TallDrinksList() {
                     )}
                     {selectedCocktail.filler1 !== "N/A" && (
                       <li>
-                        <strong>Mixer1:</strong> {selectedCocktail.filler1}
+                        <strong>Mixer 1:</strong> {selectedCocktail.filler1}
                       </li>
                     )}
                     {selectedCocktail.filler2 !== "N/A" && (
                       <li>
-                        <strong>Mixer2:</strong> {selectedCocktail.filler2}
+                        <strong>Mixer 2:</strong> {selectedCocktail.filler2}
                       </li>
                     )}
                     {selectedCocktail.filler3 !== "N/A" && (
                       <li>
-                        <strong>Mixer3:</strong> {selectedCocktail.filler3}
+                        <strong>Mixer 3:</strong> {selectedCocktail.filler3}
                       </li>
                     )}
                     {selectedCocktail.top && (

@@ -34,16 +34,24 @@ function WineCocktailList() {
   const cocktails = [
     {
       name: "Spritzer",
-      alcohol1: "1/2 White Wine",
-      filler1: "1/2 Soda",
+      alcohol: "1/2 White Wine",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      filler: "1/2 Soda",
+      filler1: "N/A",
+      filler2: "N/A",
       glass: "Wine/Fancy",
       mixingMethod: "Pour",
       garnish: "Lemon Twist",
     },
     {
       name: "Mimosa",
-      alcohol1: "1/2 Champagne",
-      filler1: "1/2 Orange Juice",
+      alcohol: "1/2 Champagne",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      filler: "1/2 Orange Juice",
+      filler1: "N/A",
+      filler2: "N/A",
       glass: "Flute/Fancy",
       mixingMethod: "Pour",
       garnish: "none",
@@ -88,22 +96,34 @@ function WineCocktailList() {
                 <div className="recipe-section">
                   <h4>Ingredients</h4>
                   <ul>
-                    <li>
-                      <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
-                    </li>
-                    {selectedCocktail.liquor2 !== "N/A" && (
+                    {selectedCocktail.alcohol !== "N/A" && (
                       <li>
-                        <strong>Alcohol2:</strong> {selectedCocktail.alcohol2}
+                        <strong>Alcohol:</strong> {selectedCocktail.alcohol}
                       </li>
                     )}
-                    {selectedCocktail.filler1 && (
+                    {selectedCocktail.alcohol1 !== "N/A" && (
                       <li>
-                        <strong>Mixer1:</strong> {selectedCocktail.filler1}
+                        <strong>Alcohol 1:</strong> {selectedCocktail.alcohol1}
                       </li>
                     )}
-                    {selectedCocktail.filler2 && (
+                    {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
-                        <strong>Mixer2:</strong> {selectedCocktail.filler2}
+                        <strong>Alcohol 2:</strong> {selectedCocktail.alcohol2}
+                      </li>
+                    )}
+                    {selectedCocktail.filler !== "N/A" && (
+                      <li>
+                        <strong>Mixer:</strong> {selectedCocktail.filler}
+                      </li>
+                    )}
+                    {selectedCocktail.filler1 !== "N/A" && (
+                      <li>
+                        <strong>Mixer 1:</strong> {selectedCocktail.filler1}
+                      </li>
+                    )}
+                    {selectedCocktail.filler2 !== "N/A" && (
+                      <li>
+                        <strong>Mixer 2:</strong> {selectedCocktail.filler2}
                       </li>
                     )}
                   </ul>

@@ -167,17 +167,17 @@ function CreamDrinksList() {
                     )}
                     {selectedCocktail.alcohol1 !== "N/A" && (
                       <li>
-                        <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
+                        <strong>Alcohol 1:</strong> {selectedCocktail.alcohol1}
                       </li>
                     )}
                     {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
-                        <strong>Alcohol2:</strong> {selectedCocktail.alcohol2}
+                        <strong>Alcohol 2:</strong> {selectedCocktail.alcohol2}
                       </li>
                     )}
                     {selectedCocktail.alcohol3 !== "N/A" && (
                       <li>
-                        <strong>Alcohol3:</strong> {selectedCocktail.alcohol3}
+                        <strong>Alcohol 3:</strong> {selectedCocktail.alcohol3}
                       </li>
                     )}
                     {selectedCocktail.filler && (

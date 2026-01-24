@@ -34,108 +34,126 @@ function ShootersList() {
   const cocktails = [
     {
       name: "Purple Hooter Shooter",
+      alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Raspberry Liqueur",
-      alcohol3: "",
+      alcohol3: "N/A",
+      filler: "N/A",
       filler1: "Splash of Sweet & Sour",
       filler2: "Splash of Cranberry",
-      filler3: "",
+      filler3: "N/A",
       glass: "Shooter",
       mixingMethod: "Swirl & Strain",
       garnish: "none",
     },
     {
       name: "Melon Ball Shooter",
+      alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Melon Liqueur",
-      alcohol3: "",
-      filler1: "Splash of Pineapple Juice",
-      filler2: "",
-      filler3: "",
+      alcohol3: "N/A",
+      filler: "Splash of Pineapple Juice",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Shooter",
       mixingMethod: "Swirl & Strain",
       garnish: "none",
     },
     {
       name: "Sex On The Beach Shooter",
+      alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
-      alcohol3: "",
+      alcohol3: "N/A",
+      filler: "N/A",
       filler1: "Splash of Orange Juice",
       filler2: "Splash of Cranberry Juice",
-      filler3: "",
+      filler3: "N/A",
       glass: "Shooter",
       mixingMethod: "Swirl & Strain",
       garnish: "none",
     },
     {
       name: "Woo Woo Shooter",
+      alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
-      alcohol3: "",
-      filler1: "Splash of Cranberry",
-      filler2: "",
-      filler3: "",
+      alcohol3: "N/A",
+      filler: "Splash of Cranberry",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Shooter",
       mixingMethod: "Swirl & Strain",
       garnish: "none",
     },
     {
       name: "Silk Panties",
+      alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
-      alcohol3: "",
-      filler1: "",
-      filler2: "",
-      filler3: "",
+      alcohol3: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Shooter",
       mixingMethod: "Swirl & Strain",
       garnish: "none",
     },
     {
       name: "Kamikaze Shooter",
+      alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Triple Sec",
-      alcohol3: "",
-      filler1: "Splash of Roses's Lime Juice",
-      filler2: "",
-      filler3: "",
+      alcohol3: "N/A",
+      filler: "Splash of Roses's Lime Juice",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Shooter",
       mixingMethod: "Swirl & Strain",
       garnish: "none",
     },
     {
       name: "Blue Kamikaze Shooter",
+      alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Blue Curacao",
-      alcohol3: "",
-      filler1: "Splash of Roses' Lime Juice",
-      filler2: "",
-      filler3: "",
+      alcohol3: "N/A",
+      filler: "Splash of Roses' Lime Juice",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Shooter",
       mixingMethod: "Swirl & Strain",
       garnish: "none",
     },
     {
       name: "Orgasm",
+      alcohol: "N/A",
       alcohol1: "1oz Amaretto",
       alcohol2: "1/2oz Kahlua",
       alcohol3: "1/2oz Bailey's Irish Cream",
-      filler1: "Splash of Cream",
-      filler2: "",
-      filler3: "",
+      filler: "Splash of Cream",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Shooter",
       mixingMethod: "Swirl & Strain",
       garnish: "none",
     },
     {
       name: "Mind Eraser",
+      alcohol: "N/A",
       alcohol1: "1oz Kahlua",
       alcohol2: "1oz Vodka",
-      alcohol3: "",
-      filler1: "Splash of Soda",
-      filler2: "",
-      filler3: "",
+      alcohol3: "N/A",
+      filler: "Splash of Soda",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Rocks",
       mixingMethod: "On Ice",
       description:
@@ -144,33 +162,39 @@ function ShootersList() {
     },
     {
       name: "Alabama Slammer",
+      alcohol: "N/A",
       alcohol1: "1oz Southern Comfort",
       alcohol2: "1/2oz Amaretto",
       alcohol3: "1/2oz Sloe Gin",
-      filler1: "Splash of Orange Juice",
-      filler2: "",
-      filler3: "",
+      filler: "Splash of Orange Juice",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Shooter",
       mixingMethod: "Swirl & Strain",
       garnish: "none",
     },
     {
       name: "Washington Apple",
+      alcohol: "N/A",
       alcohol1: "1oz Crown Royal",
       alcohol2: "1/2oz Sour Apple Schnapps",
-      alcohol3: "",
-      filler1: "Splash of Cranberry Juice",
-      filler2: "",
-      filler3: "",
+      alcohol3: "N/A",
+      filler: "Splash of Cranberry Juice",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Shooter",
       mixingMethod: "Swirl & Strain",
       garnish: "none",
     },
     {
       name: "Green Tea",
+      alcohol: "N/A",
       alcohol1: "1oz Jameson",
       alcohol2: "1/2oz Peach Schnapps",
-      alcohol3: "",
+      alcohol3: "N/A",
+      filler: "N/A",
       filler1: "Splash of Pinneapple Juice",
       filler2: "Splash of Sweet & Sour Mix",
       filler3: "Splash of Sprite",
@@ -180,24 +204,28 @@ function ShootersList() {
     },
     {
       name: "Buttery Nipple",
+      alcohol: "N/A",
       alcohol1: "1oz Butterschotch Schnapps",
       alcohol2: "1oz Bailey's Irish Cream",
-      alcohol3: "",
-      filler1: "",
-      filler2: "",
-      filler3: "",
+      alcohol3: "N/A",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Pony",
       mixingMethod: "Spoon Float",
       garnish: "none",
     },
     {
       name: "B-52",
+      alcohol: "N/A",
       alcohol1: "1/3 Kahlua",
       alcohol2: "1/3 Bailey's Irish Cream",
       alcohol3: "1/3 Grand Marnier",
-      filler1: "",
-      filler2: "",
-      filler3: "",
+      filler: "N/A",
+      filler1: "N/A",
+      filler2: "N/A",
+      filler3: "N/A",
       glass: "Pony",
       mixingMethod: "Spoon Float",
       garnish: "none",
@@ -242,32 +270,44 @@ function ShootersList() {
                 <div className="recipe-section">
                   <h4>Ingredients</h4>
                   <ul>
-                    <li>
-                      <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
-                    </li>
+                    {selectedCocktail.alcohol !== "N/A" && (
+                      <li>
+                        <strong>Alcohol:</strong> {selectedCocktail.alcohol}
+                      </li>
+                    )}
+                    {selectedCocktail.alcohol1 !== "N/A" && (
+                      <li>
+                        <strong>Alcohol 1:</strong> {selectedCocktail.alcohol1}
+                      </li>
+                    )}
                     {selectedCocktail.liquor2 !== "N/A" && (
                       <li>
-                        <strong>Alcohol2:</strong> {selectedCocktail.alcohol2}
+                        <strong>Alcohol 2:</strong> {selectedCocktail.alcohol2}
                       </li>
                     )}
-                    {selectedCocktail.alcohol2 !== "N/A" && (
+                    {selectedCocktail.alcohol3 !== "N/A" && (
                       <li>
-                        <strong>Alcohol3:</strong> {selectedCocktail.alcohol3}
+                        <strong>Alcohol 3:</strong> {selectedCocktail.alcohol3}
                       </li>
                     )}
-                    {selectedCocktail.filler1 && (
+                    {selectedCocktail.filler !== "N/A" && (
                       <li>
-                        <strong>Mixer1:</strong> {selectedCocktail.filler1}
+                        <strong>Mixer:</strong> {selectedCocktail.filler}
                       </li>
                     )}
-                    {selectedCocktail.filler2 && (
+                    {selectedCocktail.filler1 !== "N/A" && (
                       <li>
-                        <strong>Mixer2:</strong> {selectedCocktail.filler2}
+                        <strong>Mixer 1:</strong> {selectedCocktail.filler1}
                       </li>
                     )}
-                    {selectedCocktail.filler3 && (
+                    {selectedCocktail.filler2 !== "N/A" && (
                       <li>
-                        <strong>Mixer3:</strong> {selectedCocktail.filler3}
+                        <strong>Mixer 2:</strong> {selectedCocktail.filler2}
+                      </li>
+                    )}
+                    {selectedCocktail.filler3 !== "N/A" && (
+                      <li>
+                        <strong>Mixer 3:</strong> {selectedCocktail.filler3}
                       </li>
                     )}
                   </ul>

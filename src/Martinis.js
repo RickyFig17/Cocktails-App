@@ -335,27 +335,27 @@ function MartinisList() {
                     )}
                     {selectedCocktail.alcohol1 !== "N/A" && (
                       <li>
-                        <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
+                        <strong>Alcohol 1:</strong> {selectedCocktail.alcohol1}
                       </li>
                     )}
                     {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
-                        <strong>Alcohol2:</strong> {selectedCocktail.alcohol2}
+                        <strong>Alcohol 2:</strong> {selectedCocktail.alcohol2}
                       </li>
                     )}
                     {selectedCocktail.alcohol3 !== "N/A" && (
                       <li>
-                        <strong>Alcohol3:</strong> {selectedCocktail.alcohol3}
+                        <strong>Alcohol 3:</strong> {selectedCocktail.alcohol3}
                       </li>
                     )}
                     {selectedCocktail.alcohol4 !== "N/A" && (
                       <li>
-                        <strong>Alcohol4:</strong> {selectedCocktail.alcohol4}
+                        <strong>Alcohol 4:</strong> {selectedCocktail.alcohol4}
                       </li>
                     )}
                     {selectedCocktail.alcohol5 !== "N/A" && (
                       <li>
-                        <strong>Alcohol5:</strong> {selectedCocktail.alcohol5}
+                        <strong>Alcohol 5:</strong> {selectedCocktail.alcohol5}
                       </li>
                     )}
                     {selectedCocktail.filler !== "N/A" && (
@@ -365,17 +365,17 @@ function MartinisList() {
                     )}
                     {selectedCocktail.filler1 !== "N/A" && (
                       <li>
-                        <strong>Mixer1:</strong> {selectedCocktail.filler1}
+                        <strong>Mixer 1:</strong> {selectedCocktail.filler1}
                       </li>
                     )}
                     {selectedCocktail.filler2 !== "N/A" && (
                       <li>
-                        <strong>Mixer2:</strong> {selectedCocktail.filler2}
+                        <strong>Mixer 2:</strong> {selectedCocktail.filler2}
                       </li>
                     )}
                     {selectedCocktail.filler3 !== "N/A" && (
                       <li>
-                        <strong>Mixer3:</strong> {selectedCocktail.filler3}
+                        <strong>Mixer 3:</strong> {selectedCocktail.filler3}
                       </li>
                     )}
                   </ul>

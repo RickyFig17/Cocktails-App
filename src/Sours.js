@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "./Sours.scss"
+import "./Sours.scss";
 
 function Sours() {
   return (
@@ -34,7 +34,10 @@ function SoursList() {
   const cocktails = [
     {
       name: "Stone Sour",
-      alcohol1: "1 1/2oz Whiskey",
+      alcohol: "1 1/2oz Whiskey",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      filler: "N/A",
       filler1: "1oz Orange Juice",
       filler2: "1oz Sweet & Sour",
       glass: "Cocktail/Rocks",
@@ -43,31 +46,46 @@ function SoursList() {
     },
     {
       name: "Amaretto Sour",
-      alcohol1: "1 1/2oz Amaretto",
-      filler1: "2oz Sweet & Sour",
+      alcohol: "1 1/2oz Amaretto",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      filler: "2oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
       glass: "Cocktail/Rocks",
       mixingMethod: "Shake & Strain",
       garnish: "Flagg",
     },
     {
       name: "Whiskey Sour",
-      alcohol1: "1 1/2oz Whiskey",
-      filler1: "2oz Sweet & Sour",
+      alcohol: "1 1/2oz Whiskey",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      filler: "2oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
       glass: "Cocktail/Rocks",
       mixingMethod: "Shake & Strain",
       garnish: "Flagg",
     },
     {
       name: "Rum Sour",
-      alcohol1: "1 1/2oz Lt.Rum",
-      filler1: "2oz Sweet & Sour",
+      alcohol: "1 1/2oz Lt.Rum",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      filler: "2oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
       glass: "Cocktail/Rocks",
       mixingMethod: "Shake & Strain",
       garnish: "Flagg",
     },
     {
       name: "Daiquiri",
-      alcohol1: "1 1/2oz Lt.Rum",
+      alcohol: "1 1/2oz Lt.Rum",
+      alcohol1: "N/A",
+      alcohol2: "N/A",
+      filler: "N/A",
       filler1: "1oz Lime Juice",
       filler2: "1oz Simple Syrup",
       glass: "Cocktail/Rocks",
@@ -76,37 +94,47 @@ function SoursList() {
     },
     {
       name: "Margarita",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Tequila",
       alcohol2: "1/2oz Triple Sec",
-      filler1: "1 1/2oz Sweet & Sour",
+      filler: "1 1/2oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
       glass: "Margarita",
       mixingMethod: "Shake & Strain",
       garnish: "Salt Rim & Lime Wedge",
     },
     {
       name: "Blue Margarita",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Tequila",
       alcohol2: "1/2oz Blue Curacao",
-      filler1: "1 1/2oz Sweet & Sour",
+      filler: "1 1/2oz Sweet & Sour",
+      filler1: "N/A",
+      filler2: "N/A",
       glass: "Margarita",
       mixingMethod: "Shake & Strain",
       garnish: "Salt Rim & Lime Wedge",
     },
     {
       name: "Frozen Strawberry Margarita",
+      alcohol: "N/A",
       alcohol1: "2oz Tequila",
       alcohol2: "1oz Triple Sec",
+      filler: "N/A",
       filler1: "1/2oz Sweet & Sour",
       filler2:
-        "1oz Strawberry Margarita/ Daiquiri Mix (Blend with one full glass of Ice)",
+        "1oz Strawberry Margarita / Daiquiri Mix (Blend with one full glass of Ice)",
       glass: "Margarita",
       mixingMethod: "Blend",
       garnish: "Sugar Rim & Lime Wedge",
     },
     {
       name: "Sidecar",
+      alcohol: "N/A",
       alcohol1: "1 1/2oz Brandy",
       alcohol2: "1/2oz Triple Sec",
+      filler: "N/A",
       filler1: "3/4oz Lemon Juice",
       filler2: "3/4oz Simple Syrup",
       glass: "Martini",
@@ -153,22 +181,34 @@ function SoursList() {
                 <div className="recipe-section">
                   <h4>Ingredients</h4>
                   <ul>
-                    <li>
-                      <strong>Alcohol1:</strong> {selectedCocktail.alcohol1}
-                    </li>
-                    {selectedCocktail.liquor2 !== "N/A" && (
+                    {selectedCocktail.alcohol !== "N/A" && (
                       <li>
-                        <strong>Alcohol2:</strong> {selectedCocktail.alcohol2}
+                        <strong>Alcohol:</strong> {selectedCocktail.alcohol}
                       </li>
                     )}
-                    {selectedCocktail.filler1 && (
+                    {selectedCocktail.alcohol1 !== "N/A" && (
                       <li>
-                        <strong>Mixer1:</strong> {selectedCocktail.filler1}
+                        <strong>Alcohol 1:</strong> {selectedCocktail.alcohol1}
                       </li>
                     )}
-                    {selectedCocktail.filler2 && (
+                    {selectedCocktail.alcohol2 !== "N/A" && (
                       <li>
-                        <strong>Mixer2:</strong> {selectedCocktail.filler2}
+                        <strong>Alcohol 2:</strong> {selectedCocktail.alcohol2}
+                      </li>
+                    )}
+                    {selectedCocktail.filler !== "N/A" && (
+                      <li>
+                        <strong>Mixer:</strong> {selectedCocktail.filler}
+                      </li>
+                    )}
+                    {selectedCocktail.filler1 !== "N/A" && (
+                      <li>
+                        <strong>Mixer 1:</strong> {selectedCocktail.filler1}
+                      </li>
+                    )}
+                    {selectedCocktail.filler2 !== "N/A" && (
+                      <li>
+                        <strong>Mixer 2:</strong> {selectedCocktail.filler2}
                       </li>
                     )}
                   </ul>
