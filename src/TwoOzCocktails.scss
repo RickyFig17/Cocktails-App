@@ -80,7 +80,8 @@ $text-white: #ffffff;
 
   .modal-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    // justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba($text-white, 0.1);
     padding-bottom: 15px;
@@ -96,13 +97,16 @@ $text-white: #ffffff;
       color: white;
       font-size: 24px;
       cursor: pointer;
+      width: 100%;
+      display: flex;
+      justify-content: end;
     }
   }
 
   .modal-cocktail-img {
-    width: 100%;
+    // width: 100%;
     max-height: 250px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 12px;
     margin-bottom: 15px;
     box-shadow: 0 0 20px rgba(0, 206, 209, 0.3); // Neon glow
