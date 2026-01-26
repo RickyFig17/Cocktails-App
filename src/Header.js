@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
-import logo1 from "./images/Logo1.png";
+import logo1 from "./assets/Logo1.png";
 import "./Header.scss";
 import BostonShaker from "./BostonShaker";
 import { Link } from "react-router-dom";

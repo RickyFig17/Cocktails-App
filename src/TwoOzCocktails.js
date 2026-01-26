@@ -31,9 +31,11 @@ function CocktailCard({ cocktail, onOpen }) {
 
 function TwoOzCocktailsList() {
   const [selectedCocktail, setSelectedCocktail] = useState(null);
+
   const cocktails = [
     {
       name: "Black Russian",
+      image: "images/Two-oz-drinks/Black-Russian.png",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1oz Kahlua",
@@ -44,6 +46,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "White Russian",
+      image: "",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1oz Kahlua",
@@ -54,6 +57,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Kahlua And Cream",
+      image: "",
       alcohol: "2oz Kahlua",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -64,6 +68,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Toasted Almond",
+      image: "",
       alcohol: "N/A",
       alcohol1: "1oz Amaretto",
       alcohol2: "1oz Kahlua",
@@ -74,6 +79,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Gimlet",
+      image: "",
       alcohol: "2oz Gin",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -84,6 +90,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Vodka Gimlet",
+      image: "",
       alcohol: "2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -94,6 +101,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "God Father",
+      image: "",
       alcohol: "N/A",
       alcohol1: "1oz Scotch",
       alcohol2: "1oz Amaretto",
@@ -104,6 +112,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "God Mother",
+      image: "",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1oz Amaretto",
@@ -114,6 +123,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Stinger",
+      image: "",
       alcohol: "N/A",
       alcohol1: "1oz Brandy",
       alcohol2: "1oz White Creme de Menthe",
@@ -124,6 +134,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Colorado Bulldog",
+      image: "",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1oz Kahlua",
@@ -134,6 +145,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Kamikaze",
+      image: "",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1oz Triple Sec",
@@ -144,6 +156,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Rusty Nail",
+      image: "",
       alcohol: "N/A",
       alcohol1: "1oz Scotch",
       alcohol2: "1oz Drambuie",
@@ -154,6 +167,7 @@ function TwoOzCocktailsList() {
     },
     {
       name: "Old Fashion",
+      image: "",
       alcohol: "2oz Whiskey",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -191,6 +205,13 @@ function TwoOzCocktailsList() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="modal-header">
+                {selectedCocktail.image && (
+                  <img
+                    src={selectedCocktail.image}
+                    alt={selectedCocktail.name}
+                    className="modal-cocktail-img"
+                  />
+                )}
                 <h2>{selectedCocktail.name}</h2>
                 <button
                   className="close-x"

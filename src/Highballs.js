@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "./Highballs.scss"
+import "./Highballs.scss";
 
 function Highballs() {
   return (
@@ -95,18 +95,6 @@ function HighballList() {
     {
       name: "Rum & Coke",
       alcohol: "1 1/2oz Rum",
-      alcohol1: "N/A",
-      alcohol2: "N/A",
-      filler: "2oz Coke",
-      filler1: "N/A",
-      filler2: "N/A",
-      glass: "Highball",
-      mixingMethod: "Build on Ice",
-      garnish: "none",
-    },
-    {
-      name: "Bacardi & Coke",
-      alcohol: "1 1/2oz Bacardi Rum",
       alcohol1: "N/A",
       alcohol2: "N/A",
       filler: "2oz Coke",
@@ -363,18 +351,6 @@ function HighballList() {
       filler: "N/A",
       filler1: "1oz Cranberry Juice",
       filler2: "1oz White Grape Juice",
-      glass: "Highball",
-      mixingMethod: "Build on Ice",
-      garnish: "Lime Wedge",
-    },
-    {
-      name: "jeweler's Hammer",
-      alcohol: "1 1/2oz Vodka",
-      alcohol1: "N/A",
-      alcohol2: "N/A",
-      filler: "N/A",
-      filler1: "1oz White Grape Juice",
-      filler2: "1oz Club Soda",
       glass: "Highball",
       mixingMethod: "Build on Ice",
       garnish: "Lime Wedge",
