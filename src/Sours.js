@@ -34,6 +34,7 @@ function SoursList() {
   const cocktails = [
     {
       name: "Stone Sour",
+      image: "images/Sours-&-Margaritas/Stone-Sour.png",
       alcohol: "1 1/2oz Whiskey",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -46,6 +47,7 @@ function SoursList() {
     },
     {
       name: "Amaretto Sour",
+      image: "images/Sours-&-Margaritas/Amaretto-Sour.png",
       alcohol: "1 1/2oz Amaretto",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -58,6 +60,7 @@ function SoursList() {
     },
     {
       name: "Whiskey Sour",
+      image: "images/Sours-&-Margaritas/Whiskey-Sour.png",
       alcohol: "1 1/2oz Whiskey",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -70,6 +73,7 @@ function SoursList() {
     },
     {
       name: "Rum Sour",
+      image: "images/Sours-&-Margaritas/Rum-Sour.png",
       alcohol: "1 1/2oz Lt.Rum",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -82,6 +86,7 @@ function SoursList() {
     },
     {
       name: "Daiquiri",
+      image: "images/Sours-&-Margaritas/Daiquiri.png",
       alcohol: "1 1/2oz Lt.Rum",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -94,6 +99,7 @@ function SoursList() {
     },
     {
       name: "Margarita",
+      image: "images/Sours-&-Margaritas/Margarita.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Tequila",
       alcohol2: "1/2oz Triple Sec",
@@ -106,6 +112,7 @@ function SoursList() {
     },
     {
       name: "Blue Margarita",
+      image: "images/Sours-&-Margaritas/Blue-Margarita.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Tequila",
       alcohol2: "1/2oz Blue Curacao",
@@ -118,6 +125,7 @@ function SoursList() {
     },
     {
       name: "Frozen Strawberry Margarita",
+      image: "images/Sours-&-Margaritas/Frozen-Strawberry-Margarita.png",
       alcohol: "N/A",
       alcohol1: "2oz Tequila",
       alcohol2: "1oz Triple Sec",
@@ -131,6 +139,7 @@ function SoursList() {
     },
     {
       name: "Sidecar",
+      image: "images/Sours-&-Margaritas/Sidecar.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Brandy",
       alcohol2: "1/2oz Triple Sec",

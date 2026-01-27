@@ -177,6 +177,18 @@ function TwoOzCocktailsList() {
       mixingMethod: "Build on Ice",
       garnish: "Orange Peel, Cherry",
     },
+    {
+      name: "Negroni",
+      image: "images/Two-oz-drinks/Negroni.png",
+      alcohol: "N/A",
+      alcohol1: "3/4oz Gin",
+      alcohol2: "3/4oz Sweet Vermouth",
+      alcohol3: "3/4oz Campari",
+      filler: "N/A",
+      glass: "Rocks Glass",
+      mixingMethod: "Build on Ice",
+      garnish: "Orange Peel",
+    },
   ];
 
   return (

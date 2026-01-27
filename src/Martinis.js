@@ -34,6 +34,7 @@ function MartinisList() {
   const cocktails = [
     {
       name: "Martini",
+      image: "images/Martinis/Martini.png",
       alcohol: "N/A",
       alcohol1: "2oz Gin",
       alcohol2: "1oz Dry Vermouth",
@@ -50,6 +51,7 @@ function MartinisList() {
     },
     {
       name: "Dry Martini",
+      image: "images/Martinis/Dry-Martini.png",
       alcohol: "N/A",
       alcohol1: "2oz Gin",
       alcohol2: "1/2oz Dry Vermouth",
@@ -66,6 +68,7 @@ function MartinisList() {
     },
     {
       name: "Manhattan",
+      image: "images/Martinis/Manhattan.png",
       alcohol: "N/A",
       alcohol1: "2oz Whiskey or Bourbon",
       alcohol2: "1oz Sweet Vermouth",
@@ -82,6 +85,7 @@ function MartinisList() {
     },
     {
       name: "Dry Manhattan",
+      image: "images/Martinis/Dry-Manhattan.png",
       alcohol: "N/A",
       alcohol1: "2oz Whiskey or Bourbon",
       alcohol2: "1oz Dry Vermouth",
@@ -98,6 +102,7 @@ function MartinisList() {
     },
     {
       name: "Perfect Manhattan",
+      image: "images/Martinis/Perfect-Manhattan.png",
       alcohol: "N/A",
       alcohol1: "2oz Whiskey or Bourbon",
       alcohol2: "1oz Sweet Vermouth",
@@ -114,6 +119,7 @@ function MartinisList() {
     },
     {
       name: "Gibson",
+      image: "images/Martinis/Gibson.png",
       alcohol: "N/A",
       alcohol1: "2oz Gin",
       alcohol2: "1oz Dry Vermouth",
@@ -130,6 +136,7 @@ function MartinisList() {
     },
     {
       name: "Rob Roy",
+      image: "images/Martinis/Rob-Roy.png",
       alcohol: "N/A",
       alcohol1: "2oz Scotch",
       alcohol2: "1oz Sweet Vermouth",
@@ -146,6 +153,7 @@ function MartinisList() {
     },
     {
       name: "Dry Rob Roy",
+      image: "images/Martinis/Dry-Rob-Roy.png",
       alcohol: "N/A",
       alcohol1: "2oz Scotch",
       alcohol2: "1/2oz Dry Vermouth",
@@ -162,6 +170,7 @@ function MartinisList() {
     },
     {
       name: "Perfect Rob Roy",
+      image: "images/Martinis/Perfect-Rob-Roy.png",
       alcohol: "N/A",
       alcohol1: "2oz Scotch",
       alcohol2: "1oz Dry Vermouth",
@@ -178,6 +187,7 @@ function MartinisList() {
     },
     {
       name: "Cosmopolitan",
+      image: "images/Martinis/Cosmopolitan.png",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Cointreau",
@@ -193,23 +203,8 @@ function MartinisList() {
       garnish: "Lime Wedge",
     },
     {
-      name: "Negroni",
-      alcohol: "N/A",
-      alcohol1: "3/4oz Gin",
-      alcohol2: "3/4oz Sweet Vermouth",
-      alcohol3: "3/4oz Campari",
-      alcohol4: "N/A",
-      alcohol5: "N/A",
-      filler: "N/A",
-      filler1: "N/A",
-      filler2: "N/A",
-      filler3: "N/A",
-      glass: "Martini",
-      mixingMethod: "Stir & Strain",
-      garnish: "Orange Peel",
-    },
-    {
       name: "Apple Martini",
+      image: "images/Martinis/Apple-Martini.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "1oz Sour Apple Schnapps",
@@ -226,6 +221,7 @@ function MartinisList() {
     },
     {
       name: "Vieux Carre",
+      image: "images/Martinis/Vieux-Carre.png",
       alcohol: "N/A",
       alcohol1: "1/2oz Rye Whiskey",
       alcohol2: "1/2oz Cognac",
@@ -242,6 +238,7 @@ function MartinisList() {
     },
     {
       name: "Aviation",
+      image: "images/Martinis/Aviation.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Gin",
       alcohol2: "1/2oz Luxardo",
@@ -258,6 +255,7 @@ function MartinisList() {
     },
     {
       name: "Espresso Martini",
+      image: "images/Martinis/Espresso-Martini.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "1oz Kahlua, Tia Maria or Mr. Black",
@@ -274,6 +272,7 @@ function MartinisList() {
     },
     {
       name: "The Last Word",
+      image: "images/Martinis/The-Last-Word.png",
       alcohol: "N/A",
       alcohol1: "3/4oz Gin",
       alcohol2: "3/4oz Luxardo",

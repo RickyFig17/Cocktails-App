@@ -34,6 +34,7 @@ function ShootersList() {
   const cocktails = [
     {
       name: "Purple Hooter Shooter",
+      image: "images/Shooters/Purple-Hooter.png",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Raspberry Liqueur",
@@ -48,6 +49,7 @@ function ShootersList() {
     },
     {
       name: "Melon Ball Shooter",
+      image: "images/Shooters/Melon-Ball.png",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Melon Liqueur",
@@ -62,6 +64,7 @@ function ShootersList() {
     },
     {
       name: "Sex On The Beach Shooter",
+      image: "images/Shooters/Sex-On-The-Beach.png",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
@@ -76,6 +79,7 @@ function ShootersList() {
     },
     {
       name: "Woo Woo Shooter",
+      image: "images/Shooters/Woo-Woo.png",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
@@ -90,6 +94,7 @@ function ShootersList() {
     },
     {
       name: "Silk Panties",
+      image: "images/Shooters/Silk-Panties.png",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
@@ -104,6 +109,7 @@ function ShootersList() {
     },
     {
       name: "Kamikaze Shooter",
+      image: "images/Shooters/Kamikaze.png",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Triple Sec",
@@ -117,21 +123,8 @@ function ShootersList() {
       garnish: "none",
     },
     {
-      name: "Blue Kamikaze Shooter",
-      alcohol: "N/A",
-      alcohol1: "1oz Vodka",
-      alcohol2: "1/2oz Blue Curacao",
-      alcohol3: "N/A",
-      filler: "Splash of Roses' Lime Juice",
-      filler1: "N/A",
-      filler2: "N/A",
-      filler3: "N/A",
-      glass: "Shooter",
-      mixingMethod: "Swirl & Strain",
-      garnish: "none",
-    },
-    {
       name: "Orgasm",
+      image: "images/Shooters/Orgasm.png",
       alcohol: "N/A",
       alcohol1: "1oz Amaretto",
       alcohol2: "1/2oz Kahlua",
@@ -146,6 +139,7 @@ function ShootersList() {
     },
     {
       name: "Mind Eraser",
+      image: "images/Shooters/Mind-Eraser.png",
       alcohol: "N/A",
       alcohol1: "1oz Kahlua",
       alcohol2: "1oz Vodka",
@@ -162,6 +156,7 @@ function ShootersList() {
     },
     {
       name: "Alabama Slammer",
+      image: "images/Shooters/Alabama-Slammer.png",
       alcohol: "N/A",
       alcohol1: "1oz Southern Comfort",
       alcohol2: "1/2oz Amaretto",
@@ -176,6 +171,7 @@ function ShootersList() {
     },
     {
       name: "Washington Apple",
+      image: "images/Shooters/Washington-Apple.png",
       alcohol: "N/A",
       alcohol1: "1oz Crown Royal",
       alcohol2: "1/2oz Sour Apple Schnapps",
@@ -190,6 +186,7 @@ function ShootersList() {
     },
     {
       name: "Green Tea",
+      image: "images/Shooters/Green-Tea.png",
       alcohol: "N/A",
       alcohol1: "1oz Jameson",
       alcohol2: "1/2oz Peach Schnapps",
@@ -204,6 +201,7 @@ function ShootersList() {
     },
     {
       name: "Buttery Nipple",
+      image: "images/Shooters/Buttery-Nipple.png",
       alcohol: "N/A",
       alcohol1: "1oz Butterschotch Schnapps",
       alcohol2: "1oz Bailey's Irish Cream",
@@ -218,6 +216,7 @@ function ShootersList() {
     },
     {
       name: "B-52",
+      image: "images/Shooters/B-52.png",
       alcohol: "N/A",
       alcohol1: "1/3 Kahlua",
       alcohol2: "1/3 Bailey's Irish Cream",

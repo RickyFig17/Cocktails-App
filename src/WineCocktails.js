@@ -33,11 +33,12 @@ function WineCocktailList() {
   const [selectedCocktail, setSelectedCocktail] = useState(null);
   const cocktails = [
     {
-      name: "Spritzer",
-      alcohol: "1/2 White Wine",
+      name: "Aperol Spritz",
+      image: "images/Wine-Cocktails/Aperol-Spritz.png",
+      alcohol: "1oz Aperol",
       alcohol1: "N/A",
       alcohol2: "N/A",
-      filler: "1/2 Soda",
+      filler: "Champagne",
       filler1: "N/A",
       filler2: "N/A",
       glass: "Wine/Fancy",
@@ -46,6 +47,7 @@ function WineCocktailList() {
     },
     {
       name: "Mimosa",
+      image: "images/Wine-Cocktails/Mimosa.png",
       alcohol: "1/2 Champagne",
       alcohol1: "N/A",
       alcohol2: "N/A",
