@@ -34,6 +34,7 @@ function TallDrinksList() {
   const cocktails = [
     {
       name: "Tom Collins",
+      image: "images/Tall-Drinks/Tom-Collins.png",
       alcohol: "2oz Gin",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -51,6 +52,7 @@ function TallDrinksList() {
     },
     {
       name: "John Collins",
+      image: "images/Tall-Drinks/John-Collins.png",
       alcohol: "2oz Whiskey",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -68,6 +70,7 @@ function TallDrinksList() {
     },
     {
       name: "Sloe Gin Fizz",
+      image: "images/Tall-Drinks/Sloe-Gin-Fizz.png",
       alcohol: "2oz Sloe Gin",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -85,6 +88,7 @@ function TallDrinksList() {
     },
     {
       name: "Lynchburg Lemonade",
+      image: "images/Tall-Drinks/Lynchburg-Lemonade.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Jack Daniels",
       alcohol2: "1/2oz Triple Sec",
@@ -102,6 +106,7 @@ function TallDrinksList() {
     },
     {
       name: "Blue Hawaiian",
+      image: "images/Tall-Drinks/Blue-Hawaiian.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Lt. Rum",
       alcohol2: "1/2oz Blue Curacao",
@@ -119,6 +124,7 @@ function TallDrinksList() {
     },
     {
       name: "Sex on the Beach",
+      image: "images/Tall-Drinks/Sex-on-the-Beach.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
@@ -135,6 +141,7 @@ function TallDrinksList() {
     },
     {
       name: "Bahama Mama",
+      image: "images/Tall-Drinks/Bahama-Mama.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Lt. Rum",
       alcohol2: "1/2oz Malibu Rum",
@@ -151,6 +158,7 @@ function TallDrinksList() {
     },
     {
       name: "Rum Runner",
+      image: "images/Tall-Drinks/Rum-Runner.png",
       alcohol: "N/A",
       alcohol1: "1oz Lt. Rum",
       alcohol2: "1/2oz Blackberry Brandy",
@@ -168,6 +176,7 @@ function TallDrinksList() {
     },
     {
       name: "Mai Tai",
+      image: "images/Tall-Drinks/Mai-Tai.png",
       alcohol: "N/A",
       alcohol1: "1/2oz Lt. Rum",
       alcohol2: "1/2oz Triple sec",
@@ -184,6 +193,7 @@ function TallDrinksList() {
     },
     {
       name: "Long Island Tea",
+      image: "images/Tall-Drinks/Long-Island-Tea.png",
       alcohol: "N/A",
       alcohol1: "1/2oz Vodka",
       alcohol2: "1/2oz Gin",
@@ -201,6 +211,7 @@ function TallDrinksList() {
     },
     {
       name: "Electric Lemonade",
+      image: "images/Tall-Drinks/Electric-Lemonade.png",
       alcohol: "N/A",
       alcohol1: "1/2oz Vodka",
       alcohol2: "1/2oz Gin",
@@ -218,6 +229,7 @@ function TallDrinksList() {
     },
     {
       name: "Miami Ice",
+      image: "images/Tall-Drinks/Miami-Ice.png",
       alcohol: "N/A",
       alcohol1: "1/2oz Vodka",
       alcohol2: "1/2oz Gin",
@@ -235,6 +247,7 @@ function TallDrinksList() {
     },
     {
       name: "Long Beach Tea",
+      image: "images/Tall-Drinks/Long-Beach-Tea.png",
       alcohol: "N/A",
       alcohol1: "1/2oz Vodka",
       alcohol2: "1/2oz Gin",
@@ -252,6 +265,7 @@ function TallDrinksList() {
     },
     {
       name: "Liquid Marijuana",
+      image: "images/Tall-Drinks/Liquid-Lemonade.png",
       alcohol: "N/A",
       alcohol1: "1/2oz Captain Morgan",
       alcohol2: "1/2oz Blue Curacao",
@@ -268,6 +282,7 @@ function TallDrinksList() {
     },
     {
       name: "Mojito",
+      image: "images/Tall-Drinks/Mojito.png",
       alcohol: "2oz Bacardi Rum",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -287,6 +302,7 @@ function TallDrinksList() {
     },
     {
       name: "Frozen Strawberry Daiquiri",
+      image: "images/Tall-Drinks/Frozen-Strawberry-Daiquiri.png",
       alcohol: "1 1/2oz Lt. Rum",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -304,6 +320,7 @@ function TallDrinksList() {
     },
     {
       name: "Frozen Pina Colada",
+      image: "images/Tall-Drinks/Pina-Colada.png",
       alcohol: "N/A",
       alcohol1: "1 1/2oz Lt. Rum",
       alcohol2: "3 1/2oz Pina Colada Mix",
@@ -346,13 +363,21 @@ function TallDrinksList() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="modal-header">
-                <h2>{selectedCocktail.name}</h2>
                 <button
                   className="close-x"
                   onClick={() => setSelectedCocktail(null)}
                 >
                   ×
                 </button>
+                 {selectedCocktail.image && (
+                  <img
+                    src={selectedCocktail.image}
+                    alt={selectedCocktail.name}
+                    className="modal-cocktail-img"
+                  />
+                )}
+                <h2>{selectedCocktail.name}</h2>
+                
               </div>
               <div className="modal-grid">
                 <div className="recipe-section">

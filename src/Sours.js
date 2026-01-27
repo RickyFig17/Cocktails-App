@@ -169,13 +169,20 @@ function SoursList() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="modal-header">
-                <h2>{selectedCocktail.name}</h2>
                 <button
                   className="close-x"
                   onClick={() => setSelectedCocktail(null)}
                 >
                   ×
                 </button>
+                {selectedCocktail.image && (
+                  <img
+                    src={selectedCocktail.image}
+                    alt={selectedCocktail.name}
+                    className="modal-cocktail-img"
+                  />
+                )}
+                <h2>{selectedCocktail.name}</h2>
               </div>
               <div className="modal-grid">
                 <div className="recipe-section">
