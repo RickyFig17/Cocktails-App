@@ -34,6 +34,7 @@ function HighballList() {
   const cocktails = [
     {
       name: "Presbyterian",
+      image: "images/Highballs/Presbyterian.png",
       alcohol: "1 1/2oz Whiskey",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -46,6 +47,7 @@ function HighballList() {
     },
     {
       name: "7 & 7",
+      image: "images/Highballs/7-&-7.png",
       alcohol: "1 1/2oz Seagram's Seven",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -58,6 +60,7 @@ function HighballList() {
     },
     {
       name: "Scotch & Soda",
+      image: "images/Highballs/Scotch-&-Soda.png",
       alcohol: "1 1/2oz Scotch",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -70,6 +73,7 @@ function HighballList() {
     },
     {
       name: "Deward's & Soda",
+      image: "images/Highballs/Dewards-&-Soda.png",
       alcohol: "1 1/2oz Dewar's Scotch",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -82,6 +86,7 @@ function HighballList() {
     },
     {
       name: "Bourbon & Coke",
+      image: "images/Highballs/Bourbon-&-Coke.png",
       alcohol: "1 1/2oz Well Bourbon",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -94,6 +99,7 @@ function HighballList() {
     },
     {
       name: "Rum & Coke",
+      image: "images/Highballs/Rum-&-Coke.png",
       alcohol: "1 1/2oz Rum",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -106,6 +112,7 @@ function HighballList() {
     },
     {
       name: "Cuba Libre",
+      image: "images/Highballs/Cuba-Libre.png",
       alcohol: "1 1/2oz Lt. Rum",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -118,6 +125,7 @@ function HighballList() {
     },
     {
       name: "Gin & Tonic",
+      image: "images/Highballs/Gin-&-Tonic.png",
       alcohol: "1 1/2oz Gin",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -130,6 +138,7 @@ function HighballList() {
     },
     {
       name: "Gin Rickey",
+      image: "images/Highballs/Gin-Rickey.png",
       alcohol: "1 1/2oz Gin",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -142,6 +151,7 @@ function HighballList() {
     },
     {
       name: "Vodka & Tonic",
+      image: "images/Highballs/Vodka-Tonic.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -154,6 +164,7 @@ function HighballList() {
     },
     {
       name: "Screwdriver",
+      image: "images/Highballs/Screwdriver.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -166,6 +177,7 @@ function HighballList() {
     },
     {
       name: "Greyhound",
+      image: "images/Highballs/Greyhound.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -178,6 +190,7 @@ function HighballList() {
     },
     {
       name: "Salty Dog",
+      image: "images/Highballs/Salty-Dog.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -190,6 +203,7 @@ function HighballList() {
     },
     {
       name: "Bloody Mary",
+      image: "images/Highballs/Bloody-Mary.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -202,6 +216,7 @@ function HighballList() {
     },
     {
       name: "Cape Codder",
+      image: "images/Highballs/Cape-Codder.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -214,6 +229,7 @@ function HighballList() {
     },
     {
       name: "Sea Breeze",
+      image: "images/Highballs/Sea-Breeze.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -226,6 +242,7 @@ function HighballList() {
     },
     {
       name: "Bay Breeze",
+      image: "images/Highballs/Bay-Breeze.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -238,6 +255,7 @@ function HighballList() {
     },
     {
       name: "Madras",
+      image: "images/Highballs/Madras.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -250,6 +268,7 @@ function HighballList() {
     },
     {
       name: "Harvey Wallbanger",
+      image: "images/Highballs/Harvey-Wallbanger.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -262,6 +281,7 @@ function HighballList() {
     },
     {
       name: "Fuzzy Navel",
+      image: "images/Highballs/Fuzzy-Navel.png",
       alcohol: "1 1/2oz Peach Schnapps",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -274,6 +294,7 @@ function HighballList() {
     },
     {
       name: "Hairy Navel",
+      image: "images/Highballs/Hairy-Navel.png",
       alcohol: "N/A",
       alcohol1: "1oz Vodka",
       alcohol2: "1/2oz Peach Schnapps",
@@ -286,6 +307,7 @@ function HighballList() {
     },
     {
       name: "Sloe Screw",
+      image: "images/Highballs/Sloe-Screw.png",
       alcohol: "1 1/2oz Sloe Gin",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -298,6 +320,7 @@ function HighballList() {
     },
     {
       name: "Sloe Comfortable Screw",
+      image: "images/Highballs/Sloe-Comfortable-Screw.png",
       alcohol: "N/A",
       alcohol1: "1oz Southern Comfort",
       alcohol2: "1/2oz Sloe Gin",
@@ -310,6 +333,7 @@ function HighballList() {
     },
     {
       name: "Tequila Sunrise",
+      image: "images/Highballs/Tequila-Sunrise.png",
       alcohol: "1 1/2oz Tequila",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -322,6 +346,7 @@ function HighballList() {
     },
     {
       name: "Moscow Mule",
+      image: "images/Highballs/Moscow-Mule.png",
       alcohol: "1 1/2oz Vodka",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -334,6 +359,7 @@ function HighballList() {
     },
     {
       name: "Ranch Water",
+      image: "images/Highballs/Ranch-Water.png",
       alcohol: "1 1/2oz Tequila",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -346,6 +372,7 @@ function HighballList() {
     },
     {
       name: "Menage a Trois",
+      image: "images/Highballs/Menage-a-Trois.png",
       alcohol: "1 1/2oz Vodka",
       alcohol2: "N/A",
       filler: "N/A",
@@ -357,6 +384,7 @@ function HighballList() {
     },
     {
       name: "Americano",
+      image: "images/Highballs/Americano.png",
       alcohol: "N/A",
       alcohol1: "3/4oz Campari",
       alcohol2: "3/4oz Sweet Vermouth",
@@ -369,6 +397,7 @@ function HighballList() {
     },
     {
       name: "Mint Julep",
+      image: "images/Highballs/Mint-Julep.png",
       alcohol: "2oz Bourbon",
       alcohol1: "N/A",
       alcohol2: "N/A",

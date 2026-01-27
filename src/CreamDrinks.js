@@ -34,6 +34,7 @@ function CreamDrinksList() {
   const cocktails = [
     {
       name: "Grasshopper",
+      image: "images/Cream-Drinks/Grasshopper.png",
       alcohol: "N/A",
       alcohol1: "1oz White Creme de Cacao",
       alcohol2: "1oz Green Creme de Menthe",
@@ -45,6 +46,7 @@ function CreamDrinksList() {
     },
     {
       name: "Pink Squirrel",
+      image: "images/Cream-Drinks/Pink-Squirrel.png",
       alcohol: "N/A",
       alcohol1: "1oz White Creme de Cacao",
       alcohol2: "1oz Creme de Almond (Noyeaux)",
@@ -56,6 +58,7 @@ function CreamDrinksList() {
     },
     {
       name: "Brandy Alexander",
+      image: "images/Cream-Drinks/Brandy-Alexander.png",
       alcohol: "N/A",
       alcohol1: "1oz Brown Creme de Cacao",
       alcohol2: "1oz Brandy",
@@ -67,6 +70,7 @@ function CreamDrinksList() {
     },
     {
       name: "Alexander",
+      image: "images/Cream-Drinks/Alexander.png",
       alcohol: "N/A",
       alcohol1: "1oz Brown Creme de Cacao",
       alcohol2: "1oz Gin",
@@ -78,6 +82,7 @@ function CreamDrinksList() {
     },
     {
       name: "Mudslide",
+      image: "images/Cream-Drinks/Mudslide.png",
       alcohol: "N/A",
       alcohol1: "3/4oz Vodka",
       alcohol2: "3/4oz Bailey's Irish Cream",
@@ -89,6 +94,7 @@ function CreamDrinksList() {
     },
     {
       name: "Irish Coffee",
+      image: "images/Cream-Drinks/Irish-Coffee.png",
       alcohol: "1 1/2oz Irish Whiskey",
       alcohol1: "N/A",
       alcohol2: "N/A",
@@ -100,6 +106,7 @@ function CreamDrinksList() {
     },
     {
       name: "Keoke Coffee",
+      image: "images/Cream-Drinks/Keoke-Coffee.png",
       alcohol: "N/A",
       alcohol1: "3/4oz Brandy (First Ingredient)",
       alcohol2: "3/4oz Kahlua",
@@ -111,6 +118,7 @@ function CreamDrinksList() {
     },
     {
       name: "Nutty Irishman",
+      image: "images/Cream-Drinks/Nutty-Irishman.png",
       alcohol: "N/A",
       alcohol1: "1oz Bailey's Irish Cream",
       alcohol2: "1oz Frangelico",
