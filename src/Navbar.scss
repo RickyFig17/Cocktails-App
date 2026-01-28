@@ -76,6 +76,10 @@
   }
 }
 
+.pill-wrapper {
+  display: flex;
+}
+
 @keyframes slideInPill {
   from {
     opacity: 0;
