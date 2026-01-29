@@ -23,6 +23,9 @@ function CocktailCard({ cocktail, onOpen }) {
         whileTap={{ scale: 0.97 }}
         onClick={() => onOpen(cocktail)}
       >
+        <div className="list-thumbnail">
+          <img src={cocktail.image} alt={cocktail.name} />
+        </div>
         <h3>{cocktail.name}</h3>
       </div>
     </motion.div>
@@ -264,8 +267,8 @@ function TallDrinksList() {
       garnish: "Lime Wedge",
     },
     {
-      name: "Liquid Marijuana",
-      image: "images/Tall-Drinks/Liquid-Lemonade.png",
+      name: "Liquid Marihuana",
+      image: "images/Tall-Drinks/Liquid-Marihuana.png",
       alcohol: "N/A",
       alcohol1: "1/2oz Captain Morgan",
       alcohol2: "1/2oz Blue Curacao",
@@ -301,7 +304,7 @@ function TallDrinksList() {
         "Add 4-5 mint leaves from bottom of stem, get them wet with the mix already on glass. Do not muddle.",
     },
     {
-      name: "Frozen Strawberry Daiquiri",
+      name: "Frozen Daiquiri",
       image: "images/Tall-Drinks/Frozen-Strawberry-Daiquiri.png",
       alcohol: "1 1/2oz Lt. Rum",
       alcohol1: "N/A",
@@ -369,7 +372,7 @@ function TallDrinksList() {
                 >
                   ×
                 </button>
-                 {selectedCocktail.image && (
+                {selectedCocktail.image && (
                   <img
                     src={selectedCocktail.image}
                     alt={selectedCocktail.name}
@@ -377,7 +380,6 @@ function TallDrinksList() {
                   />
                 )}
                 <h2>{selectedCocktail.name}</h2>
-                
               </div>
               <div className="modal-grid">
                 <div className="recipe-section">

@@ -23,6 +23,9 @@ function CocktailCard({ cocktail, onOpen }) {
         whileTap={{ scale: 0.97 }}
         onClick={() => onOpen(cocktail)}
       >
+        <div className="list-thumbnail">
+          <img src={cocktail.image} alt={cocktail.name} />
+        </div>
         <h3>{cocktail.name}</h3>
       </div>
     </motion.div>
