@@ -1,30 +1,57 @@
+$bg-color: #0b0e14;
+$surface-color: #1c1f26;
+$violet: #8a2be2;
+$teal: #00ced1;
+$pink: #ff007f;
+$text-white: #ffffff;
+
 .header-wrapper {
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; // This stacks them vertically
+  align-items: center; // Centers everything horizontally
+  padding: 20px 0;
+  background-color: $bg-color;
+  border-bottom: 1px solid rgba($violet, 0.2);
+  gap: 20px; // Adds consistent space between Logo, Search, and Nav
 
-  .logo-container {
-    margin-bottom: 5px;
+  .header-logo {
+    max-width: 20rem; // Adjust based on your logo size
+    height: auto;
+  }
 
-    .header-logo {
-      height: 20rem;
-      width: auto;
-      filter: drop-shadow(0 0 10px rgba(0, 206, 209, 0.3));
-      transition: transform 0.3s ease;
+  .desktop-search-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-      &:hover {
-        transform: scale(1.05);
+    @media (max-width: 480px) {
+      display: none; // Keep it hidden on mobile as requested
+    }
+
+    .search-bar {
+      width: 90%;
+      max-width: 500px;
+      background: $surface-color;
+      border: 1px solid rgba($teal, 0.4); // Using teal to match the "hero" glow
+      border-radius: 25px;
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+
+      input {
+        background: transparent;
+        border: none;
+        color: white;
+        width: 100%;
+        padding: 5px 10px;
+        outline: none;
+        font-size: 16px;
       }
     }
-  }
 
-  .header-container {
-    display: flex;
-  }
-
-  .nav-wrapper {
-    width: 100%;
-    // max-width: 600px;
+    .search-icon {
+      font-size: 1.4rem;
+      color: #888;
+    }
   }
 }

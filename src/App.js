@@ -20,6 +20,7 @@ function App() {
   const location = useLocation();
   const [direction, setDirection] = useState(0);
   const [prevPath, setPrevPath] = useState(location.pathname);
+  const [searchTerm, setSearchTerm] = useState("")
 
   const pathOrder = [
     "/",
@@ -68,7 +69,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <AnimatePresence mode="wait">
         {loading ? (
           <SplashScreen key="splash" />
@@ -100,19 +101,21 @@ function App() {
           >
             <Routes location={location}>
               <Route path="/" element={<Home />} />
-              <Route path="/two-oz-cocktails" element={<TwoOzCocktails />} />
-              <Route path="/tall-drinks" element={<TallDrinks />} />
-              <Route path="/highballs" element={<Highballs />} />
-              <Route path="/cream-drinks" element={<CreamDrinks />} />
-              <Route path="/martinis" element={<Martinis />} />
-              <Route path="/sours" element={<Sours />} />
-              <Route path="/shooters" element={<Shooters />} />
-              <Route path="/wine-cocktails" element={<WineCocktails />} />
+              <Route path="/two-oz-cocktails" element={<TwoOzCocktails searchTerm={searchTerm} />} />
+              <Route path="/tall-drinks" element={<TallDrinks searchTerm={searchTerm} />} />
+              <Route path="/highballs" element={<Highballs searchTerm={searchTerm} />} />
+              <Route path="/cream-drinks" element={<CreamDrinks searchTerm={searchTerm} />} />
+              <Route path="/martinis" element={<Martinis searchTerm={searchTerm} />} />
+              <Route path="/sours" element={<Sours searchTerm={searchTerm} />} />
+              <Route path="/shooters" element={<Shooters searchTerm={searchTerm} />} />
+              <Route path="/wine-cocktails" element={<WineCocktails searchTerm={searchTerm} />} />
             </Routes>
           </motion.div>
         </AnimatePresence>
       </div>
+      
       <BottomBar />
+      
     </div>
   );
 }
